@@ -11,7 +11,8 @@ import UIKit
 class AddBeneficiaryViewController: UIViewController {
     
     var foundUserDetail: PeerUser!
-    
+    static let Identifier: String = "AddBeneficiaryViewController"
+    static let segueID: String = "AddBeneficiarySegue"
     @IBOutlet weak var payeeDetailsLbl: UILabel!
     
     override func viewDidLoad() {

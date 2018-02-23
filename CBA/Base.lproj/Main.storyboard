@@ -276,6 +276,8 @@
                         <outlet property="lblVisibility" destination="2t6-tf-L2f" id="zcn-XP-TDv"/>
                         <outlet property="scanView" destination="0ms-M5-xwa" id="jwJ-Hs-4OC"/>
                         <outlet property="switchVisibility" destination="Q5g-6q-7QZ" id="ULk-EX-svs"/>
+                        <segue destination="eY1-xd-hvR" kind="show" identifier="AddBeneficiarySegue" id="gVC-gX-YUl"/>
+                        <segue destination="kcL-6H-sDk" kind="show" identifier="InstantMoneySegue" id="j0m-RP-A2v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9o-aA-LHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -401,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xUW-JF-ogJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3079" y="72"/>
+            <point key="canvasLocation" x="4153" y="-224"/>
         </scene>
         <!--Add Beneficiary View Controller-->
         <scene sceneID="ysR-L1-1jz">
@@ -412,20 +414,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payee Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-GY-ffg">
-                                <rect key="frame" x="30" y="60" width="95.5" height="21"/>
+                                <rect key="frame" x="30" y="104" width="95.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Od-Cs-crW">
-                                <rect key="frame" x="20" y="96" width="335" height="1"/>
+                                <rect key="frame" x="20" y="140" width="335" height="1"/>
                                 <color key="backgroundColor" red="0.68627450980392157" green="0.73725490196078436" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="QNm-YB-Tef"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzo-ed-sWW">
-                                <rect key="frame" x="137.5" y="127" width="100" height="30"/>
+                                <rect key="frame" x="137.5" y="171" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="GUg-aK-ucH"/>
@@ -453,7 +455,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yx-vB-NUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750" y="71"/>
+            <point key="canvasLocation" x="3158" y="-759"/>
         </scene>
         <!--Instant Money Transfer View Controller-->
         <scene sceneID="Gh9-C5-bZn">
@@ -464,39 +466,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payee Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiW-9A-OHo">
-                                <rect key="frame" x="30" y="60" width="95.5" height="21"/>
+                                <rect key="frame" x="30" y="104" width="95.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pfd-IQ-naS">
-                                <rect key="frame" x="30" y="101" width="315" height="21"/>
+                                <rect key="frame" x="30" y="145" width="315" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0i-R1-CML">
-                                <rect key="frame" x="30" y="122" width="315" height="1"/>
+                                <rect key="frame" x="30" y="166" width="315" height="1"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="iyQ-Dd-uUu"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Payment Remarks" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PV8-3w-8mU">
-                                <rect key="frame" x="30" y="138" width="315" height="21"/>
+                                <rect key="frame" x="30" y="182" width="315" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuO-no-93r">
-                                <rect key="frame" x="30" y="159" width="315" height="1"/>
+                                <rect key="frame" x="30" y="203" width="315" height="1"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="KEj-se-Jhs"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYI-4D-MwV">
-                                <rect key="frame" x="112.5" y="189" width="150" height="36"/>
+                                <rect key="frame" x="112.5" y="233" width="150" height="36"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="N7e-My-yHv"/>
@@ -539,7 +541,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDM-S5-sqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4414" y="71"/>
+            <point key="canvasLocation" x="3194" y="55"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yor-r8-lLY">

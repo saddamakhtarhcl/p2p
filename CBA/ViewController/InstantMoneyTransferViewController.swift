@@ -11,7 +11,8 @@ import UIKit
 class InstantMoneyTransferViewController: UIViewController {
     
     var foundUserDetail: PeerUser!
-    
+    static let Identifier: String = "InstantMoneyTransferViewController"
+    static let segueID: String = "InstantMoneySegue"
     @IBOutlet weak var payeeName: UILabel!
     
     @IBOutlet weak var payeeNameTxt: UITextField!

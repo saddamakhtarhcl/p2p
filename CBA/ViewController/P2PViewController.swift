@@ -206,12 +206,12 @@ class P2PViewController: UIViewController {
             optionController.selectedIndexChanged = {(selectedIndex: Int) -> Void in
                 self.stopScaning()
                 if selectedIndex == 0 {
-                    if let beneficiaryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddBeneficiaryViewController") as? AddBeneficiaryViewController {
+                    if let beneficiaryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: AddBeneficiaryViewController.Identifier) as? AddBeneficiaryViewController {
                         beneficiaryViewController.foundUserDetail = userDetail
                         self.navigationController?.pushViewController(beneficiaryViewController, animated: true)
                     }
                 } else {
-                    if let immediatePayController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InstantMoneyTransferViewController") as? InstantMoneyTransferViewController {
+                    if let immediatePayController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: InstantMoneyTransferViewController.Identifier) as? InstantMoneyTransferViewController {
                         immediatePayController.foundUserDetail = userDetail
                         self.navigationController?.pushViewController(immediatePayController, animated: true)
                     }
