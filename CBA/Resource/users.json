@@ -1,0 +1,50 @@
+{
+    "userDetails": {
+        "700701": {
+            "accountNumber": "****0701",
+            "branchName": "bankstown",
+            "userName": "James"
+        },
+        "700702": {
+            "accountNumber": "****0702",
+            "branchName": "bankstown",
+            "userName": "Jack"
+        },
+        "700703": {
+            "accountNumber": "****0703",
+            "branchName": "bankstown",
+            "userName": "Harry"
+        },
+        "700704": {
+            "accountNumber": "****0704",
+            "branchName": "bankstown",
+            "userName": "Daniel"
+        },
+        "700705": {
+            "accountNumber": "****0705",
+            "branchName": "bankstown",
+            "userName": "tom"
+        },
+        "700706": {
+            "accountNumber": "****0706",
+            "branchName": "bankstown",
+            "userName": "Sam"
+        },
+        "700707": {
+            "accountNumber": "****0707",
+            "branchName": "bankstown",
+            "userName": "David"
+        },
+        "700708": {
+            "accountNumber": "****0708",
+            "branchName": "bankstown",
+            "userName": "Ben"
+        },
+        "700709": {
+            "accountNumber": "****0709",
+            "branchName": "bankstown",
+            "userName": "William"
+        }
+    }
+}
+
