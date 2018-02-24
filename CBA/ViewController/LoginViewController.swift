@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginBtnTapped(_ sender: UIButton) {
-        if txtClientNumber.text?.isEmpty == false && txtPassword.text?.isEmpty == false {
+        if txtClientNumber?.text?.isEmpty == false && txtPassword?.text?.isEmpty == false {
             DataServiceManager.userInfoService.getUserInfo(userID: txtClientNumber?.text ?? "") { [weak self] (userInfo, _) in
                 if userInfo != nil {
                     App.user = userInfo

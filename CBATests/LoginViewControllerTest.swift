@@ -29,6 +29,7 @@ class LoginViewControllerTest: XCTestCase {
         loginControllerObj.viewDidLoad()
         loginControllerObj.loginBtnTapped(UIButton())
         loginControllerObj.txtClientNumber?.text = "700701"
+        loginControllerObj.txtPassword?.text = "1234"
         loginControllerObj.loginBtnTapped(UIButton())
         loginControllerObj.didReceiveMemoryWarning()
     }
