@@ -10,6 +10,7 @@ import UIKit
 
 class DashBoardViewController: UIViewController {
     
+    @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lblAccount: UILabel!
     @IBOutlet weak var lblBalance: UILabel!
     static let segueID: String = "DashBoardSegue"
@@ -22,10 +23,12 @@ class DashBoardViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let accountNo = App.user.accountNumber
-        lblAccount.text = "Account Number\n\t\(accountNo ?? "")"
+        lblAccount.text = "Acc No.\n\(accountNo ?? "")"
         DataServiceManager.accountService.getCurrentBalance { (balance, _) in
-            self.lblBalance.text = "Avalible Balance: $\(String(describing: balance))"
+            self.lblBalance.text = "$\(String(describing: balance))"
         }
+        
+        imgAvatar.image = UIImage(named: App.user.userToken ?? "") ?? UIImage(named: "avatar")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -52,6 +55,11 @@ class DashBoardViewController: UIViewController {
         })
     }
     
+    @IBAction func btnLogout_tap(_ sender: UIButton) {
+        App.user = nil
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     private func showInvalidDetailsAlert(msg: String) {
         let alert = UIAlertController(title: msg,
                                       message: "",
@@ -62,15 +70,5 @@ class DashBoardViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

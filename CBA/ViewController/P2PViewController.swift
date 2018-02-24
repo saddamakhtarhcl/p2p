@@ -49,7 +49,7 @@ class P2PViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        self.applyGradient()
+        self.applyGradient()        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -171,10 +171,13 @@ class P2PViewController: UIViewController {
         foundUsers.append(user)
         
         var searchGraphRect: CGRect = self.scanView.frame
-        searchGraphRect.size.width -=  120
-        searchGraphRect.size.height -= 120
-        searchGraphRect.origin.x += 60
-        searchGraphRect.origin.y += 60
+        
+        // Adjusting the frame available to add found user view's
+        let extraHeight: CGFloat = searchGraphRect.size.height - searchGraphRect.size.width
+        searchGraphRect.size.width -=  100
+        searchGraphRect.size.height = searchGraphRect.size.width
+        searchGraphRect.origin.x += 10
+        searchGraphRect.origin.y += extraHeight / 2
         
         let randomPoint = searchGraphRect.randomPointInRect()
         let viewFrame = CGRect(origin: randomPoint,
@@ -240,7 +243,7 @@ class P2PViewController: UIViewController {
         let gradientFrame = CGRect(origin: CGPoint.zero, size: scanView.frame.size)
         gradientLayer!.frame = gradientFrame
         gradientLayer!.colors = [UIColor(colorCode:"96B2B4").cgColor,
-                                 UIColor(colorCode:"040407").cgColor
+                                 UIColor(colorCode:"2B616C").cgColor
         ]
         gradientLayer!.backgroundColor = UIColor.clear.cgColor
         
