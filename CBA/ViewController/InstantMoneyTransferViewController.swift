@@ -29,7 +29,7 @@ class InstantMoneyTransferViewController: UIViewController {
     
     @IBAction func btnTransferTapped(_ sender: UIButton) {
         if lblAmount.text != nil, lblRemarks != nil {
-            if let amount = lblAmount.text {
+            if let amount = lblAmount.text, lblRemarks.text?.isEmpty == false {
                 let transaction = TransactionInfo()
                 transaction.accountNo = foundUserDetail.userDetail?.accountNumber
                 transaction.amount = Double(amount)!

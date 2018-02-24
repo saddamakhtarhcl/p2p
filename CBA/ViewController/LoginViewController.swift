@@ -29,14 +29,21 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginBtnTapped(_ sender: UIButton) {
-        DataServiceManager.userInfoService.getUserInfo(userID: txtClientNumber?.text ?? "") { [weak self] (userInfo, _) in
-            if userInfo != nil {
-                App.user = userInfo
-                self?.performSegue(withIdentifier: DashBoardViewController.segueID,
-                                   sender: nil)                
-            } else {
-                self?.showInvalidCredentialsAlert()
+        if txtClientNumber.text?.isEmpty == false && txtPassword.text?.isEmpty == false {
+            DataServiceManager.userInfoService.getUserInfo(userID: txtClientNumber?.text ?? "") { [weak self] (userInfo, _) in
+                if userInfo != nil {
+                    App.user = userInfo
+                    self?.performSegue(withIdentifier: DashBoardViewController.segueID,
+                                       sender: nil)
+                    self?.txtClientNumber.text = ""
+                    self?.txtPassword.text = ""
+                } else {
+                    self?.showInvalidCredentialsAlert()
+                    self?.txtPassword.text = ""
+                }
             }
+        } else {
+            self.showInvalidCredentialsAlert()
         }
     }
     

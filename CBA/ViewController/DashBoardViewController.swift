@@ -29,6 +29,7 @@ class DashBoardViewController: UIViewController {
         }
         
         imgAvatar.image = UIImage(named: App.user.userToken ?? "") ?? UIImage(named: "avatar")
+        self.initLogoutBtn()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,6 +40,16 @@ class DashBoardViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func initLogoutBtn() {
+        let rightButtonItem = UIBarButtonItem.init(
+            image: UIImage(named: "logout")?.withRenderingMode(.alwaysOriginal),
+            style: .done,
+            target: self,
+            action: #selector(DashBoardViewController.btnLogout_tap(_:))
+        )
+        self.navigationItem.rightBarButtonItem = rightButtonItem
     }
     
     @IBAction func btnP2pTapped(_ sender: UIButton) {
