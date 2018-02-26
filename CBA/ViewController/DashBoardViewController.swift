@@ -25,7 +25,7 @@ class DashBoardViewController: UIViewController {
         let accountNo = App.user.accountNumber
         lblAccount.text = "Acc No.\n\(accountNo ?? "")"
         DataServiceManager.accountService.getCurrentBalance { (balance, _) in
-            self.lblBalance.text = "$\(String(describing: balance))"
+            self.lblBalance.text = "$\(String(format: "%.2f", balance))"
         }
         
         imgAvatar.image = UIImage(named: App.user.userToken ?? "") ?? UIImage(named: "avatar")

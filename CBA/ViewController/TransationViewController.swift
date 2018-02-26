@@ -44,7 +44,7 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
         if let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableViewCell") as? TransactionTableViewCell {
             let transaction: TransactionInfo = trancations[indexPath.item]
             cell.accountNumberLbl.text = transaction.accountNo
-            cell.amountLbl.text = "\(transaction.amount)"
+            cell.amountLbl.text = "$\(String(format: "%.2f", transaction.amount))"
             cell.dateLbl.text = self.currentDate(date: transaction.date!)
             cell.remark.text = transaction.remark
             return cell
