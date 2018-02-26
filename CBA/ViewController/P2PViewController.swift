@@ -14,7 +14,7 @@ class P2PViewController: UIViewController {
     
     // MARK: - String literals
     
-    private let strPageTitle: String = "Pear to Pear"
+    private let strPageTitle: String = "Peer to Peer"
     private let strVisibleON: String = "Visibility On"
     private let strVisibleOFF: String = "Visibility Off"
     private let strFindUser: String = "Find Users"
@@ -36,7 +36,7 @@ class P2PViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Pear to pear"
+        self.navigationItem.title = "Peer to peer"
     }
     
     override func viewDidDisappear(_ animated: Bool) {
