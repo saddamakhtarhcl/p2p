@@ -7,25 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72AE6C50203681A000A18376 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C4F203681A000A18376 /* App.swift */; };
-		72AE6C56203687DE00A18376 /* P2PViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C53203687DE00A18376 /* P2PViewController.swift */; };
-		72AE6C58203687DE00A18376 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C55203687DE00A18376 /* LoginViewController.swift */; };
-		72AE6C5C203687EA00A18376 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C5A203687EA00A18376 /* UserInfo.swift */; };
-		72AE6C60203687F700A18376 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C5E203687F700A18376 /* BaseModel.swift */; };
-		72AE6C61203687F700A18376 /* Utililty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C5F203687F700A18376 /* Utililty.swift */; };
+		4067A854204512C500427DBB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4067A853204512C500427DBB /* Info.plist */; };
+		4067A8882045133400427DBB /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8572045133400427DBB /* Environment.swift */; };
+		4067A8892045133400427DBB /* Development.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8582045133400427DBB /* Development.swift */; };
+		4067A88A2045133400427DBB /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85A2045133400427DBB /* UserInfoService.swift */; };
+		4067A88B2045133400427DBB /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85B2045133400427DBB /* AccountService.swift */; };
+		4067A88C2045133400427DBB /* AccountInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85E2045133400427DBB /* AccountInfoProvider.swift */; };
+		4067A88D2045133400427DBB /* UserInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85F2045133400427DBB /* UserInfoProvider.swift */; };
+		4067A88E2045133400427DBB /* ServiceTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8612045133400427DBB /* ServiceTaskDelegate.swift */; };
+		4067A88F2045133400427DBB /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8622045133400427DBB /* ServiceProvider.swift */; };
+		4067A8912045133400427DBB /* P2PManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8672045133400427DBB /* P2PManager.swift */; };
+		4067A8922045133400427DBB /* PeerToPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8682045133400427DBB /* PeerToPeer.swift */; };
+		4067A8932045133400427DBB /* DataServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A86A2045133400427DBB /* DataServiceManager.swift */; };
+		4067A8942045133400427DBB /* BackgroundViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A86C2045133400427DBB /* BackgroundViewView.swift */; };
+		4067A8952045133400427DBB /* PopFilterOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A86D2045133400427DBB /* PopFilterOptionView.swift */; };
+		4067A8962045133400427DBB /* PopFilterOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4067A86F2045133400427DBB /* PopFilterOptionView.xib */; };
+		4067A8972045133400427DBB /* PeerUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4067A8702045133400427DBB /* PeerUserView.xib */; };
+		4067A8982045133400427DBB /* UserActionPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8712045133400427DBB /* UserActionPopViewController.swift */; };
+		4067A8992045133400427DBB /* RadarAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8722045133400427DBB /* RadarAnimationLayer.swift */; };
+		4067A89A2045133400427DBB /* PeerUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8732045133400427DBB /* PeerUserView.swift */; };
+		4067A89B2045133400427DBB /* HttpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8772045133400427DBB /* HttpTask.swift */; };
+		4067A89C2045133400427DBB /* HttpTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8782045133400427DBB /* HttpTypes.swift */; };
+		4067A89D2045133400427DBB /* HttpCacheTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8792045133400427DBB /* HttpCacheTask.swift */; };
+		4067A89E2045133400427DBB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A87A2045133400427DBB /* Task.swift */; };
+		4067A89F2045133400427DBB /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A87C2045133400427DBB /* UserInfo.swift */; };
+		4067A8A02045133400427DBB /* TransactionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A87D2045133400427DBB /* TransactionInfo.swift */; };
+		4067A8A12045133400427DBB /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A87F2045133400427DBB /* DashBoardViewController.swift */; };
+		4067A8A22045133400427DBB /* TransationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8802045133400427DBB /* TransationViewController.swift */; };
+		4067A8A32045133400427DBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8812045133400427DBB /* LoginViewController.swift */; };
+		4067A8A42045133400427DBB /* InstantMoneyTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8822045133400427DBB /* InstantMoneyTransferViewController.swift */; };
+		4067A8A52045133400427DBB /* P2PViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8832045133400427DBB /* P2PViewController.swift */; };
+		4067A8A62045133400427DBB /* AddBeneficiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8842045133400427DBB /* AddBeneficiaryViewController.swift */; };
+		4067A8A72045133400427DBB /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8862045133400427DBB /* BaseModel.swift */; };
+		4067A8A82045133400427DBB /* Utililty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8872045133400427DBB /* Utililty.swift */; };
+		4067A8AC2045134E00427DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8A92045134E00427DBB /* AppDelegate.swift */; };
+		4067A8AD2045134E00427DBB /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8AA2045134E00427DBB /* AppConfig.swift */; };
+		4067A8AE2045134E00427DBB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8AB2045134E00427DBB /* App.swift */; };
+		4067A8B02045139800427DBB /* Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8AF2045139800427DBB /* Caching.swift */; };
+		4067A8B4204513E400427DBB /* CachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B1204513E300427DBB /* CachePolicy.swift */; };
+		4067A8B5204513E400427DBB /* CacheData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B2204513E300427DBB /* CacheData.swift */; };
+		4067A8B6204513E400427DBB /* TimeCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B3204513E400427DBB /* TimeCachePolicy.swift */; };
+		4067A8B82045143600427DBB /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B72045143600427DBB /* TransactionTableViewCell.swift */; };
 		72AE6C642036882C00A18376 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AE6C632036882B00A18376 /* users.json */; };
-		72AE6C92203688FD00A18376 /* P2PManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C90203688FD00A18376 /* P2PManager.swift */; };
-		72AE6C93203688FD00A18376 /* PeerToPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE6C91203688FD00A18376 /* PeerToPeer.swift */; };
-		72CFFD7F203BF31E004CCFFC /* PeerUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CFFD7D203BF31E004CCFFC /* PeerUserView.xib */; };
-		72CFFD80203BF31E004CCFFC /* PopFilterOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CFFD7E203BF31E004CCFFC /* PopFilterOptionView.xib */; };
-		72CFFD82203BF33D004CCFFC /* PopFilterOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFFD81203BF33D004CCFFC /* PopFilterOptionView.swift */; };
-		72CFFD85203BF3C0004CCFFC /* UserInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFFD84203BF3C0004CCFFC /* UserInfoProvider.swift */; };
-		72CFFD88203BF3CB004CCFFC /* DataServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFFD87203BF3CB004CCFFC /* DataServiceManager.swift */; };
-		A2464CC72032A6B20073C9B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2464CC62032A6B20073C9B2 /* AppDelegate.swift */; };
 		A2464CCC2032A6B20073C9B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCA2032A6B20073C9B2 /* Main.storyboard */; };
 		A2464CCE2032A6B20073C9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCD2032A6B20073C9B2 /* Assets.xcassets */; };
 		A2464CD12032A6B20073C9B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCF2032A6B20073C9B2 /* LaunchScreen.storyboard */; };
-		A26BFA9D203BE29700074B8F /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26BFA9C203BE29700074B8F /* UserInfoService.swift */; };
 		A27D7A3B203D3153001A9BBD /* CBATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A3A203D3153001A9BBD /* CBATests.swift */; };
 		A27D7A43203D32F4001A9BBD /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A42203D32F4001A9BBD /* LoginViewControllerTest.swift */; };
 		A27D7A45203D38E1001A9BBD /* P2PViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A44203D38E1001A9BBD /* P2PViewControllerTest.swift */; };
@@ -38,18 +64,6 @@
 		A27D7A59203D75D4001A9BBD /* RadarAnimationLayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A58203D75D4001A9BBD /* RadarAnimationLayerTest.swift */; };
 		A27D7A5C203D78AF001A9BBD /* UserInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A5B203D78AF001A9BBD /* UserInfoTest.swift */; };
 		A27D7A5E203D79C6001A9BBD /* UserInfoProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A5D203D79C6001A9BBD /* UserInfoProviderTest.swift */; };
-		A281B413203E959700CC508B /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281B412203E959700CC508B /* DashBoardViewController.swift */; };
-		A281B415203E991100CC508B /* TransationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281B414203E991100CC508B /* TransationViewController.swift */; };
-		A281B417203E9C1900CC508B /* TransactionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281B416203E9C1900CC508B /* TransactionInfo.swift */; };
-		A281B419203EA3E800CC508B /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281B418203EA3E800CC508B /* AccountService.swift */; };
-		A281B41B203EA58400CC508B /* AccountInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281B41A203EA58400CC508B /* AccountInfoProvider.swift */; };
-		A281B421203EC51500CC508B /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281B420203EC51500CC508B /* TransactionTableViewCell.swift */; };
-		A2DBA40E2035668700F2630D /* BackgroundViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA40A2035668600F2630D /* BackgroundViewView.swift */; };
-		A2DBA40F2035668700F2630D /* RadarAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA40B2035668600F2630D /* RadarAnimationLayer.swift */; };
-		A2DBA4102035668700F2630D /* PeerUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBA40C2035668700F2630D /* PeerUserView.swift */; };
-		A2DF8BC72036A47600CC48DE /* UserActionPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DF8BC62036A47600CC48DE /* UserActionPopViewController.swift */; };
-		A2DF8BCD2036B79B00CC48DE /* AddBeneficiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DF8BCC2036B79B00CC48DE /* AddBeneficiaryViewController.swift */; };
-		A2DF8BCF2036B7B700CC48DE /* InstantMoneyTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DF8BCE2036B7B700CC48DE /* InstantMoneyTransferViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,26 +77,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		72AE6C4F203681A000A18376 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		72AE6C53203687DE00A18376 /* P2PViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PViewController.swift; sourceTree = "<group>"; };
-		72AE6C55203687DE00A18376 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		72AE6C5A203687EA00A18376 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		72AE6C5E203687F700A18376 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		72AE6C5F203687F700A18376 /* Utililty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utililty.swift; sourceTree = "<group>"; };
+		4067A853204512C500427DBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4067A8572045133400427DBB /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		4067A8582045133400427DBB /* Development.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Development.swift; sourceTree = "<group>"; };
+		4067A85A2045133400427DBB /* UserInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
+		4067A85B2045133400427DBB /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		4067A85E2045133400427DBB /* AccountInfoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoProvider.swift; sourceTree = "<group>"; };
+		4067A85F2045133400427DBB /* UserInfoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoProvider.swift; sourceTree = "<group>"; };
+		4067A8612045133400427DBB /* ServiceTaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTaskDelegate.swift; sourceTree = "<group>"; };
+		4067A8622045133400427DBB /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		4067A8672045133400427DBB /* P2PManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PManager.swift; sourceTree = "<group>"; };
+		4067A8682045133400427DBB /* PeerToPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerToPeer.swift; sourceTree = "<group>"; };
+		4067A86A2045133400427DBB /* DataServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceManager.swift; sourceTree = "<group>"; };
+		4067A86C2045133400427DBB /* BackgroundViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewView.swift; sourceTree = "<group>"; };
+		4067A86D2045133400427DBB /* PopFilterOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopFilterOptionView.swift; sourceTree = "<group>"; };
+		4067A86F2045133400427DBB /* PopFilterOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopFilterOptionView.xib; sourceTree = "<group>"; };
+		4067A8702045133400427DBB /* PeerUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeerUserView.xib; sourceTree = "<group>"; };
+		4067A8712045133400427DBB /* UserActionPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActionPopViewController.swift; sourceTree = "<group>"; };
+		4067A8722045133400427DBB /* RadarAnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarAnimationLayer.swift; sourceTree = "<group>"; };
+		4067A8732045133400427DBB /* PeerUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerUserView.swift; sourceTree = "<group>"; };
+		4067A8772045133400427DBB /* HttpTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTask.swift; sourceTree = "<group>"; };
+		4067A8782045133400427DBB /* HttpTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTypes.swift; sourceTree = "<group>"; };
+		4067A8792045133400427DBB /* HttpCacheTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpCacheTask.swift; sourceTree = "<group>"; };
+		4067A87A2045133400427DBB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		4067A87C2045133400427DBB /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		4067A87D2045133400427DBB /* TransactionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionInfo.swift; sourceTree = "<group>"; };
+		4067A87F2045133400427DBB /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		4067A8802045133400427DBB /* TransationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransationViewController.swift; sourceTree = "<group>"; };
+		4067A8812045133400427DBB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4067A8822045133400427DBB /* InstantMoneyTransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantMoneyTransferViewController.swift; sourceTree = "<group>"; };
+		4067A8832045133400427DBB /* P2PViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PViewController.swift; sourceTree = "<group>"; };
+		4067A8842045133400427DBB /* AddBeneficiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBeneficiaryViewController.swift; sourceTree = "<group>"; };
+		4067A8862045133400427DBB /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		4067A8872045133400427DBB /* Utililty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utililty.swift; sourceTree = "<group>"; };
+		4067A8A92045134E00427DBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4067A8AA2045134E00427DBB /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		4067A8AB2045134E00427DBB /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		4067A8AF2045139800427DBB /* Caching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caching.swift; sourceTree = "<group>"; };
+		4067A8B1204513E300427DBB /* CachePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachePolicy.swift; sourceTree = "<group>"; };
+		4067A8B2204513E300427DBB /* CacheData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheData.swift; sourceTree = "<group>"; };
+		4067A8B3204513E400427DBB /* TimeCachePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCachePolicy.swift; sourceTree = "<group>"; };
+		4067A8B72045143600427DBB /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		72AE6C632036882B00A18376 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
-		72AE6C90203688FD00A18376 /* P2PManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PManager.swift; sourceTree = "<group>"; };
-		72AE6C91203688FD00A18376 /* PeerToPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerToPeer.swift; sourceTree = "<group>"; };
-		72CFFD7D203BF31E004CCFFC /* PeerUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeerUserView.xib; sourceTree = "<group>"; };
-		72CFFD7E203BF31E004CCFFC /* PopFilterOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopFilterOptionView.xib; sourceTree = "<group>"; };
-		72CFFD81203BF33D004CCFFC /* PopFilterOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopFilterOptionView.swift; sourceTree = "<group>"; };
-		72CFFD84203BF3C0004CCFFC /* UserInfoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoProvider.swift; sourceTree = "<group>"; };
-		72CFFD87203BF3CB004CCFFC /* DataServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceManager.swift; sourceTree = "<group>"; };
 		A2464CC32032A6B20073C9B2 /* CBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2464CC62032A6B20073C9B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2464CCB2032A6B20073C9B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2464CCD2032A6B20073C9B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2464CD02032A6B20073C9B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A26BFA9C203BE29700074B8F /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
 		A27D7A38203D3153001A9BBD /* CBATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27D7A3A203D3153001A9BBD /* CBATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBATests.swift; sourceTree = "<group>"; };
 		A27D7A3C203D3153001A9BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,18 +137,6 @@
 		A27D7A58203D75D4001A9BBD /* RadarAnimationLayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarAnimationLayerTest.swift; sourceTree = "<group>"; };
 		A27D7A5B203D78AF001A9BBD /* UserInfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTest.swift; sourceTree = "<group>"; };
 		A27D7A5D203D79C6001A9BBD /* UserInfoProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoProviderTest.swift; sourceTree = "<group>"; };
-		A281B412203E959700CC508B /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
-		A281B414203E991100CC508B /* TransationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransationViewController.swift; sourceTree = "<group>"; };
-		A281B416203E9C1900CC508B /* TransactionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInfo.swift; sourceTree = "<group>"; };
-		A281B418203EA3E800CC508B /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
-		A281B41A203EA58400CC508B /* AccountInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoProvider.swift; sourceTree = "<group>"; };
-		A281B420203EC51500CC508B /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
-		A2DBA40A2035668600F2630D /* BackgroundViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewView.swift; sourceTree = "<group>"; };
-		A2DBA40B2035668600F2630D /* RadarAnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarAnimationLayer.swift; sourceTree = "<group>"; };
-		A2DBA40C2035668700F2630D /* PeerUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerUserView.swift; sourceTree = "<group>"; };
-		A2DF8BC62036A47600CC48DE /* UserActionPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionPopViewController.swift; sourceTree = "<group>"; };
-		A2DF8BCC2036B79B00CC48DE /* AddBeneficiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeneficiaryViewController.swift; sourceTree = "<group>"; };
-		A2DF8BCE2036B7B700CC48DE /* InstantMoneyTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantMoneyTransferViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,35 +157,179 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72AE6C512036878E00A18376 /* Utility */ = {
+		4067A8552045133400427DBB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				72AE6C5E203687F700A18376 /* BaseModel.swift */,
-				72AE6C5F203687F700A18376 /* Utililty.swift */,
+				4067A8AB2045134E00427DBB /* App.swift */,
+				4067A8AA2045134E00427DBB /* AppConfig.swift */,
+				4067A8A92045134E00427DBB /* AppDelegate.swift */,
+				4067A8562045133400427DBB /* Environments */,
+				4067A8592045133400427DBB /* DataService */,
+				4067A8652045133400427DBB /* Manager */,
+				4067A86B2045133400427DBB /* View */,
+				4067A8742045133400427DBB /* Supporting */,
+				4067A87B2045133400427DBB /* DataModel */,
+				4067A87E2045133400427DBB /* ViewController */,
+				4067A8852045133400427DBB /* Utility */,
 			);
-			path = Utility;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		72AE6C52203687DE00A18376 /* ViewController */ = {
+		4067A8562045133400427DBB /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				72AE6C55203687DE00A18376 /* LoginViewController.swift */,
-				A281B412203E959700CC508B /* DashBoardViewController.swift */,
-				72AE6C53203687DE00A18376 /* P2PViewController.swift */,
-				A281B414203E991100CC508B /* TransationViewController.swift */,
-				A2DF8BCC2036B79B00CC48DE /* AddBeneficiaryViewController.swift */,
-				A2DF8BCE2036B7B700CC48DE /* InstantMoneyTransferViewController.swift */,
+				4067A8572045133400427DBB /* Environment.swift */,
+				4067A8582045133400427DBB /* Development.swift */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		4067A8592045133400427DBB /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				4067A85A2045133400427DBB /* UserInfoService.swift */,
+				4067A85B2045133400427DBB /* AccountService.swift */,
+				4067A85C2045133400427DBB /* Provider */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		4067A85C2045133400427DBB /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4067A85D2045133400427DBB /* MockProviders */,
+				4067A8602045133400427DBB /* BaseProvider */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		4067A85D2045133400427DBB /* MockProviders */ = {
+			isa = PBXGroup;
+			children = (
+				4067A85E2045133400427DBB /* AccountInfoProvider.swift */,
+				4067A85F2045133400427DBB /* UserInfoProvider.swift */,
+			);
+			path = MockProviders;
+			sourceTree = "<group>";
+		};
+		4067A8602045133400427DBB /* BaseProvider */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8612045133400427DBB /* ServiceTaskDelegate.swift */,
+				4067A8622045133400427DBB /* ServiceProvider.swift */,
+			);
+			path = BaseProvider;
+			sourceTree = "<group>";
+		};
+		4067A8652045133400427DBB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8662045133400427DBB /* P2P */,
+				4067A8692045133400427DBB /* DataServiceManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4067A8662045133400427DBB /* P2P */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8672045133400427DBB /* P2PManager.swift */,
+				4067A8682045133400427DBB /* PeerToPeer.swift */,
+			);
+			path = P2P;
+			sourceTree = "<group>";
+		};
+		4067A8692045133400427DBB /* DataServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				4067A86A2045133400427DBB /* DataServiceManager.swift */,
+			);
+			path = DataServiceManager;
+			sourceTree = "<group>";
+		};
+		4067A86B2045133400427DBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8B72045143600427DBB /* TransactionTableViewCell.swift */,
+				4067A86C2045133400427DBB /* BackgroundViewView.swift */,
+				4067A86D2045133400427DBB /* PopFilterOptionView.swift */,
+				4067A86E2045133400427DBB /* XIB */,
+				4067A8712045133400427DBB /* UserActionPopViewController.swift */,
+				4067A8722045133400427DBB /* RadarAnimationLayer.swift */,
+				4067A8732045133400427DBB /* PeerUserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4067A86E2045133400427DBB /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				4067A86F2045133400427DBB /* PopFilterOptionView.xib */,
+				4067A8702045133400427DBB /* PeerUserView.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		4067A8742045133400427DBB /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8752045133400427DBB /* Cache */,
+				4067A8762045133400427DBB /* Task */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		4067A8752045133400427DBB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8AF2045139800427DBB /* Caching.swift */,
+				4067A8B2204513E300427DBB /* CacheData.swift */,
+				4067A8B1204513E300427DBB /* CachePolicy.swift */,
+				4067A8B3204513E400427DBB /* TimeCachePolicy.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		4067A8762045133400427DBB /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8772045133400427DBB /* HttpTask.swift */,
+				4067A8782045133400427DBB /* HttpTypes.swift */,
+				4067A8792045133400427DBB /* HttpCacheTask.swift */,
+				4067A87A2045133400427DBB /* Task.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		4067A87B2045133400427DBB /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4067A87C2045133400427DBB /* UserInfo.swift */,
+				4067A87D2045133400427DBB /* TransactionInfo.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		4067A87E2045133400427DBB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4067A87F2045133400427DBB /* DashBoardViewController.swift */,
+				4067A8802045133400427DBB /* TransationViewController.swift */,
+				4067A8812045133400427DBB /* LoginViewController.swift */,
+				4067A8822045133400427DBB /* InstantMoneyTransferViewController.swift */,
+				4067A8832045133400427DBB /* P2PViewController.swift */,
+				4067A8842045133400427DBB /* AddBeneficiaryViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		72AE6C59203687EA00A18376 /* DataModel */ = {
+		4067A8852045133400427DBB /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				72AE6C5A203687EA00A18376 /* UserInfo.swift */,
-				A281B416203E9C1900CC508B /* TransactionInfo.swift */,
+				4067A8862045133400427DBB /* BaseModel.swift */,
+				4067A8872045133400427DBB /* Utililty.swift */,
 			);
-			path = DataModel;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		72AE6C622036882B00A18376 /* Resource */ = {
@@ -166,60 +338,6 @@
 				72AE6C632036882B00A18376 /* users.json */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		72AE6C8E203688FD00A18376 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				72CFFD86203BF3CB004CCFFC /* DataServiceManager */,
-				72AE6C8F203688FD00A18376 /* P2P */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		72AE6C8F203688FD00A18376 /* P2P */ = {
-			isa = PBXGroup;
-			children = (
-				72AE6C90203688FD00A18376 /* P2PManager.swift */,
-				72AE6C91203688FD00A18376 /* PeerToPeer.swift */,
-			);
-			path = P2P;
-			sourceTree = "<group>";
-		};
-		72CFFD7C203BF31E004CCFFC /* XIB */ = {
-			isa = PBXGroup;
-			children = (
-				72CFFD7D203BF31E004CCFFC /* PeerUserView.xib */,
-				72CFFD7E203BF31E004CCFFC /* PopFilterOptionView.xib */,
-			);
-			path = XIB;
-			sourceTree = "<group>";
-		};
-		72CFFD83203BF3C0004CCFFC /* Provider */ = {
-			isa = PBXGroup;
-			children = (
-				72CFFD84203BF3C0004CCFFC /* UserInfoProvider.swift */,
-				A281B41A203EA58400CC508B /* AccountInfoProvider.swift */,
-			);
-			path = Provider;
-			sourceTree = "<group>";
-		};
-		72CFFD86203BF3CB004CCFFC /* DataServiceManager */ = {
-			isa = PBXGroup;
-			children = (
-				72CFFD87203BF3CB004CCFFC /* DataServiceManager.swift */,
-			);
-			path = DataServiceManager;
-			sourceTree = "<group>";
-		};
-		A201D374203AEFCB00A16F63 /* DataService */ = {
-			isa = PBXGroup;
-			children = (
-				A26BFA9C203BE29700074B8F /* UserInfoService.swift */,
-				A281B418203EA3E800CC508B /* AccountService.swift */,
-				72CFFD83203BF3C0004CCFFC /* Provider */,
-			);
-			path = DataService;
 			sourceTree = "<group>";
 		};
 		A2464CBA2032A6B20073C9B2 = {
@@ -243,16 +361,9 @@
 		A2464CC52032A6B20073C9B2 /* CBA */ = {
 			isa = PBXGroup;
 			children = (
-				A2464CC62032A6B20073C9B2 /* AppDelegate.swift */,
-				72AE6C4F203681A000A18376 /* App.swift */,
-				72AE6C52203687DE00A18376 /* ViewController */,
-				A281B41F203EC4E400CC508B /* Cell */,
-				A2DBA4092035667A00F2630D /* View */,
-				72AE6C8E203688FD00A18376 /* Manager */,
-				72AE6C59203687EA00A18376 /* DataModel */,
-				A201D374203AEFCB00A16F63 /* DataService */,
-				72AE6C512036878E00A18376 /* Utility */,
+				4067A8552045133400427DBB /* Source */,
 				72AE6C622036882B00A18376 /* Resource */,
+				4067A853204512C500427DBB /* Info.plist */,
 				A2464CCF2032A6B20073C9B2 /* LaunchScreen.storyboard */,
 				A2464CCA2032A6B20073C9B2 /* Main.storyboard */,
 				A2464CCD2032A6B20073C9B2 /* Assets.xcassets */,
@@ -310,27 +421,6 @@
 				A27D7A5D203D79C6001A9BBD /* UserInfoProviderTest.swift */,
 			);
 			path = DataModel;
-			sourceTree = "<group>";
-		};
-		A281B41F203EC4E400CC508B /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				A281B420203EC51500CC508B /* TransactionTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		A2DBA4092035667A00F2630D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				72CFFD81203BF33D004CCFFC /* PopFilterOptionView.swift */,
-				A2DBA40A2035668600F2630D /* BackgroundViewView.swift */,
-				A2DBA40C2035668700F2630D /* PeerUserView.swift */,
-				A2DF8BC62036A47600CC48DE /* UserActionPopViewController.swift */,
-				A2DBA40B2035668600F2630D /* RadarAnimationLayer.swift */,
-				72CFFD7C203BF31E004CCFFC /* XIB */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,12 +507,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CFFD7F203BF31E004CCFFC /* PeerUserView.xib in Resources */,
-				72CFFD80203BF31E004CCFFC /* PopFilterOptionView.xib in Resources */,
+				4067A8972045133400427DBB /* PeerUserView.xib in Resources */,
 				A2464CD12032A6B20073C9B2 /* LaunchScreen.storyboard in Resources */,
+				4067A8962045133400427DBB /* PopFilterOptionView.xib in Resources */,
 				A2464CCE2032A6B20073C9B2 /* Assets.xcassets in Resources */,
 				72AE6C642036882C00A18376 /* users.json in Resources */,
 				A2464CCC2032A6B20073C9B2 /* Main.storyboard in Resources */,
+				4067A854204512C500427DBB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,31 +547,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A281B41B203EA58400CC508B /* AccountInfoProvider.swift in Sources */,
-				A2DF8BCF2036B7B700CC48DE /* InstantMoneyTransferViewController.swift in Sources */,
-				A2DBA4102035668700F2630D /* PeerUserView.swift in Sources */,
-				A281B417203E9C1900CC508B /* TransactionInfo.swift in Sources */,
-				A2DF8BCD2036B79B00CC48DE /* AddBeneficiaryViewController.swift in Sources */,
-				72AE6C61203687F700A18376 /* Utililty.swift in Sources */,
-				72CFFD85203BF3C0004CCFFC /* UserInfoProvider.swift in Sources */,
-				72CFFD88203BF3CB004CCFFC /* DataServiceManager.swift in Sources */,
-				A281B419203EA3E800CC508B /* AccountService.swift in Sources */,
-				A2DF8BC72036A47600CC48DE /* UserActionPopViewController.swift in Sources */,
-				72AE6C5C203687EA00A18376 /* UserInfo.swift in Sources */,
-				A281B415203E991100CC508B /* TransationViewController.swift in Sources */,
-				A2DBA40F2035668700F2630D /* RadarAnimationLayer.swift in Sources */,
-				72AE6C93203688FD00A18376 /* PeerToPeer.swift in Sources */,
-				72AE6C92203688FD00A18376 /* P2PManager.swift in Sources */,
-				72AE6C50203681A000A18376 /* App.swift in Sources */,
-				A281B421203EC51500CC508B /* TransactionTableViewCell.swift in Sources */,
-				A26BFA9D203BE29700074B8F /* UserInfoService.swift in Sources */,
-				72AE6C58203687DE00A18376 /* LoginViewController.swift in Sources */,
-				72AE6C56203687DE00A18376 /* P2PViewController.swift in Sources */,
-				A281B413203E959700CC508B /* DashBoardViewController.swift in Sources */,
-				72AE6C60203687F700A18376 /* BaseModel.swift in Sources */,
-				A2DBA40E2035668700F2630D /* BackgroundViewView.swift in Sources */,
-				A2464CC72032A6B20073C9B2 /* AppDelegate.swift in Sources */,
-				72CFFD82203BF33D004CCFFC /* PopFilterOptionView.swift in Sources */,
+				4067A8922045133400427DBB /* PeerToPeer.swift in Sources */,
+				4067A89D2045133400427DBB /* HttpCacheTask.swift in Sources */,
+				4067A88C2045133400427DBB /* AccountInfoProvider.swift in Sources */,
+				4067A89F2045133400427DBB /* UserInfo.swift in Sources */,
+				4067A88E2045133400427DBB /* ServiceTaskDelegate.swift in Sources */,
+				4067A8A32045133400427DBB /* LoginViewController.swift in Sources */,
+				4067A89A2045133400427DBB /* PeerUserView.swift in Sources */,
+				4067A8AE2045134E00427DBB /* App.swift in Sources */,
+				4067A8B02045139800427DBB /* Caching.swift in Sources */,
+				4067A8912045133400427DBB /* P2PManager.swift in Sources */,
+				4067A8B82045143600427DBB /* TransactionTableViewCell.swift in Sources */,
+				4067A8AC2045134E00427DBB /* AppDelegate.swift in Sources */,
+				4067A88A2045133400427DBB /* UserInfoService.swift in Sources */,
+				4067A8A82045133400427DBB /* Utililty.swift in Sources */,
+				4067A8B6204513E400427DBB /* TimeCachePolicy.swift in Sources */,
+				4067A8A12045133400427DBB /* DashBoardViewController.swift in Sources */,
+				4067A8882045133400427DBB /* Environment.swift in Sources */,
+				4067A8A02045133400427DBB /* TransactionInfo.swift in Sources */,
+				4067A89C2045133400427DBB /* HttpTypes.swift in Sources */,
+				4067A8992045133400427DBB /* RadarAnimationLayer.swift in Sources */,
+				4067A8A52045133400427DBB /* P2PViewController.swift in Sources */,
+				4067A8A42045133400427DBB /* InstantMoneyTransferViewController.swift in Sources */,
+				4067A8B4204513E400427DBB /* CachePolicy.swift in Sources */,
+				4067A8A22045133400427DBB /* TransationViewController.swift in Sources */,
+				4067A89B2045133400427DBB /* HttpTask.swift in Sources */,
+				4067A88B2045133400427DBB /* AccountService.swift in Sources */,
+				4067A8942045133400427DBB /* BackgroundViewView.swift in Sources */,
+				4067A89E2045133400427DBB /* Task.swift in Sources */,
+				4067A8A72045133400427DBB /* BaseModel.swift in Sources */,
+				4067A8AD2045134E00427DBB /* AppConfig.swift in Sources */,
+				4067A8982045133400427DBB /* UserActionPopViewController.swift in Sources */,
+				4067A8952045133400427DBB /* PopFilterOptionView.swift in Sources */,
+				4067A8932045133400427DBB /* DataServiceManager.swift in Sources */,
+				4067A8B5204513E400427DBB /* CacheData.swift in Sources */,
+				4067A88D2045133400427DBB /* UserInfoProvider.swift in Sources */,
+				4067A88F2045133400427DBB /* ServiceProvider.swift in Sources */,
+				4067A8A62045133400427DBB /* AddBeneficiaryViewController.swift in Sources */,
+				4067A8892045133400427DBB /* Development.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +637,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4067A8502045103100427DBB /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Development;
+		};
+		4067A8512045103100427DBB /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XVGME84A68;
+				Environment = Development;
+				INFOPLIST_FILE = CBA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcl.hercules.int;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f65f8330-9715-4657-ae36-4249c5c51181";
+				PROVISIONING_PROFILE_SPECIFIER = MANUTDINT;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		4067A8522045103100427DBB /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XVGME84A68;
+				INFOPLIST_FILE = CBATests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nandhakumar.CBATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CBA.app/CBA";
+			};
+			name = Development;
+		};
 		A2464CE92032A6B20073C9B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -648,6 +848,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XVGME84A68;
+				Environment = Development;
 				INFOPLIST_FILE = CBA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -668,6 +869,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XVGME84A68;
+				Environment = Development;
 				INFOPLIST_FILE = CBA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -723,6 +925,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2464CE92032A6B20073C9B2 /* Debug */,
+				4067A8502045103100427DBB /* Development */,
 				A2464CEA2032A6B20073C9B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -732,6 +935,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2464CEC2032A6B20073C9B2 /* Debug */,
+				4067A8512045103100427DBB /* Development */,
 				A2464CED2032A6B20073C9B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -741,6 +945,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A27D7A40203D3153001A9BBD /* Debug */,
+				4067A8522045103100427DBB /* Development */,
 				A27D7A41203D3153001A9BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

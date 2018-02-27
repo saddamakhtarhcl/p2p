@@ -1,7 +1,8 @@
 //
 //  BaseModel.swift
 //
-//  Copyright, Manchester United Ltd, 2016
+//  Created by Saddam on 15/02/18.
+//  Copyright © 2018 Personal. All rights reserved.
 //
 
 import Foundation
