@@ -9,19 +9,27 @@ import Foundation
 
 class AppConfig {
     
+    // MARK: - Singleton
+    
     static let sharedInstance: AppConfig = AppConfig()
     
-    static let environment = environmentFromUserDefinedSetting
+    // MARK: - Instance properties
     
     let serviceBaseHostURL: String = AppConfig.environment.serviceBaseHostURL
+    
+    // MARK: - Private properties
+    
+    private static let environment = environmentFromUserDefinedSetting
 
+    // MARK: - Private methods
+    
     /**
      * Dynamically create specific environment instance based on user-defined setting
      * "Environment" containing the specific environment class name
      *
      * Returns: instance of concrete Environment class
      */
-    static fileprivate var environmentFromUserDefinedSetting: Environment {
+    private static var environmentFromUserDefinedSetting: Environment {
         let bundleName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String
         
         let currentEnv = buildEnvironment
@@ -41,7 +49,7 @@ class AppConfig {
     }
     
     // Gives the environment on which the app is build
-    static var buildEnvironment: String? {
+    private static var buildEnvironment: String? {
         // "Environment" is a user-defined configuration defined under projects "Build Settings"
         return Bundle.main.object(forInfoDictionaryKey: "Environment") as? String
     }
