@@ -11,6 +11,8 @@ import CoreBluetooth
 
 class P2PManager: NSObject, PeerToPeer {
     
+    // MARK: - Private properties
+    
     private static let serviceID: CBUUID = CBUUID(string: "42EE2599-360F-4D09-8D4A-A1D9B4F9B320")
     
     private var centralManager: CBCentralManager?
@@ -27,9 +29,13 @@ class P2PManager: NSObject, PeerToPeer {
     
     private let name: String
     
+    // MARK: - Initialiser
+    
     init(withName name: String) {
         self.name = name
     }
+    
+    // MARK: - Instance properties
     
     var isBroadcasting: Bool {
         return peripheralManager?.isAdvertising ?? false
@@ -38,6 +44,8 @@ class P2PManager: NSObject, PeerToPeer {
     var isScanning: Bool {
         return centralManager?.isScanning ?? false
     }
+    
+    // MARK: - Instance methods
     
     func startBroadcast(callback: @escaping BroadcastCallbackClosureType) {
         peripheralManager?.stopAdvertising()
@@ -53,8 +61,8 @@ class P2PManager: NSObject, PeerToPeer {
     }
     
     func stopBroadcast() {
-        peripheralManagerStateChanged = nil
         peripheralManager?.stopAdvertising()
+        peripheralManagerStateChanged = nil
         broadcastCallback = nil
         peripheralManager = nil
     }
@@ -87,6 +95,8 @@ class P2PManager: NSObject, PeerToPeer {
     
 }
 
+// MARK: - CoreBLE scanner delegate
+
 extension P2PManager: CBCentralManagerDelegate {
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
@@ -102,6 +112,8 @@ extension P2PManager: CBCentralManagerDelegate {
     }
     
 }
+
+// MARK: - CoreBLE advertiser delegate
 
 extension P2PManager: CBPeripheralManagerDelegate {
     

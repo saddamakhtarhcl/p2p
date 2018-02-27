@@ -10,7 +10,11 @@ import Foundation
 
 class App {
     
+    // MARK: - Constants
+    
     static let IdleTimeExceededNotification: String = "IdleTimeExceededNotification"
+    
+    // MARK: - Private properties
     
     private static let TokenRefreshTimeInterval: TimeInterval = 40.0 // 50.0 Secs
     
@@ -22,9 +26,16 @@ class App {
         return prIsUserIdleForLong
     }
     
+    // MARK: - Class properties
+    
+    // Current logged-in user
     static var user: UserInfo!
     
-    // MARK: - Token
+    static var p2pManager: PeerToPeer {
+        return P2PManager(withName: App.user?.accountNumber ?? "")
+    }
+    
+    // MARK: - Token refresh management
     
     static func scheduleTokenRefresh() {
         

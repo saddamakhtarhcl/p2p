@@ -34,14 +34,14 @@ class P2PViewController: UIViewController {
     
     var gradientLayer: CAGradientLayer?
     
-    let p2pManager: PeerToPeer = P2PManager(withName: App.user.accountNumber ?? UIDevice.current.name)
+    let p2pManager: PeerToPeer = App.p2pManager
     var scanAnimationTimer: Timer?
     
     // MARK: - UIViewController overriden methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Peer to peer"
+        self.navigationItem.title = strPageTitle
         self.initBackBtn()
         self.accessibilitySetUp()
     }

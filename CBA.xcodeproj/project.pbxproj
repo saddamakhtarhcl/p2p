@@ -237,8 +237,8 @@
 		4067A8662045133400427DBB /* P2P */ = {
 			isa = PBXGroup;
 			children = (
-				4067A8672045133400427DBB /* P2PManager.swift */,
 				4067A8682045133400427DBB /* PeerToPeer.swift */,
+				4067A8672045133400427DBB /* P2PManager.swift */,
 			);
 			path = P2P;
 			sourceTree = "<group>";
