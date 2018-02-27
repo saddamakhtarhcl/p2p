@@ -12,9 +12,7 @@
 		4067A88A2045133400427DBB /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85A2045133400427DBB /* UserInfoService.swift */; };
 		4067A88B2045133400427DBB /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85B2045133400427DBB /* AccountService.swift */; };
 		4067A88C2045133400427DBB /* AccountInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85E2045133400427DBB /* AccountInfoProvider.swift */; };
-		4067A88D2045133400427DBB /* UserInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85F2045133400427DBB /* UserInfoProvider.swift */; };
-		4067A88E2045133400427DBB /* ServiceTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8612045133400427DBB /* ServiceTaskDelegate.swift */; };
-		4067A88F2045133400427DBB /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8622045133400427DBB /* ServiceProvider.swift */; };
+		4067A88D2045133400427DBB /* UserInfoMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85F2045133400427DBB /* UserInfoMockProvider.swift */; };
 		4067A8912045133400427DBB /* P2PManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8672045133400427DBB /* P2PManager.swift */; };
 		4067A8922045133400427DBB /* PeerToPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8682045133400427DBB /* PeerToPeer.swift */; };
 		4067A8932045133400427DBB /* DataServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A86A2045133400427DBB /* DataServiceManager.swift */; };
@@ -48,6 +46,13 @@
 		4067A8B6204513E400427DBB /* TimeCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B3204513E400427DBB /* TimeCachePolicy.swift */; };
 		4067A8B82045143600427DBB /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B72045143600427DBB /* TransactionTableViewCell.swift */; };
 		4067A8BA204519DA00427DBB /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B9204519DA00427DBB /* KeychainService.swift */; };
+		4067A8BF20452EB300427DBB /* ServiceTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8BD20452EB300427DBB /* ServiceTaskDelegate.swift */; };
+		4067A8C020452EB300427DBB /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8BE20452EB300427DBB /* ServiceProvider.swift */; };
+		4067A8C220452F1000427DBB /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8C120452F1000427DBB /* LoginProvider.swift */; };
+		4067A8C42045301E00427DBB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8C32045301E00427DBB /* LoginService.swift */; };
+		4067A8C62045309F00427DBB /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8C52045309F00427DBB /* LoginCredentials.swift */; };
+		4067A8C82045380D00427DBB /* UserInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8C72045380D00427DBB /* UserInfoProvider.swift */; };
+		4067A8CA204550E400427DBB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8C9204550E400427DBB /* main.swift */; };
 		72AE6C642036882C00A18376 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AE6C632036882B00A18376 /* users.json */; };
 		A2464CCC2032A6B20073C9B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCA2032A6B20073C9B2 /* Main.storyboard */; };
 		A2464CCE2032A6B20073C9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCD2032A6B20073C9B2 /* Assets.xcassets */; };
@@ -83,9 +88,7 @@
 		4067A85A2045133400427DBB /* UserInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
 		4067A85B2045133400427DBB /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		4067A85E2045133400427DBB /* AccountInfoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoProvider.swift; sourceTree = "<group>"; };
-		4067A85F2045133400427DBB /* UserInfoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoProvider.swift; sourceTree = "<group>"; };
-		4067A8612045133400427DBB /* ServiceTaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTaskDelegate.swift; sourceTree = "<group>"; };
-		4067A8622045133400427DBB /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		4067A85F2045133400427DBB /* UserInfoMockProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoMockProvider.swift; sourceTree = "<group>"; };
 		4067A8672045133400427DBB /* P2PManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PManager.swift; sourceTree = "<group>"; };
 		4067A8682045133400427DBB /* PeerToPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerToPeer.swift; sourceTree = "<group>"; };
 		4067A86A2045133400427DBB /* DataServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceManager.swift; sourceTree = "<group>"; };
@@ -119,6 +122,13 @@
 		4067A8B3204513E400427DBB /* TimeCachePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCachePolicy.swift; sourceTree = "<group>"; };
 		4067A8B72045143600427DBB /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		4067A8B9204519DA00427DBB /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		4067A8BD20452EB300427DBB /* ServiceTaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTaskDelegate.swift; sourceTree = "<group>"; };
+		4067A8BE20452EB300427DBB /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		4067A8C120452F1000427DBB /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		4067A8C32045301E00427DBB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		4067A8C52045309F00427DBB /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
+		4067A8C72045380D00427DBB /* UserInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoProvider.swift; sourceTree = "<group>"; };
+		4067A8C9204550E400427DBB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		72AE6C632036882B00A18376 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		A2464CC32032A6B20073C9B2 /* CBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2464CCB2032A6B20073C9B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,16 +171,17 @@
 		4067A8552045133400427DBB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4067A8C9204550E400427DBB /* main.swift */,
+				4067A8A92045134E00427DBB /* AppDelegate.swift */,
 				4067A8AB2045134E00427DBB /* App.swift */,
 				4067A8AA2045134E00427DBB /* AppConfig.swift */,
-				4067A8A92045134E00427DBB /* AppDelegate.swift */,
 				4067A8562045133400427DBB /* Environments */,
+				4067A87B2045133400427DBB /* DataModel */,
 				4067A8592045133400427DBB /* DataService */,
 				4067A8652045133400427DBB /* Manager */,
 				4067A86B2045133400427DBB /* View */,
-				4067A8742045133400427DBB /* Supporting */,
-				4067A87B2045133400427DBB /* DataModel */,
 				4067A87E2045133400427DBB /* ViewController */,
+				4067A8742045133400427DBB /* Supporting */,
 				4067A8852045133400427DBB /* Utility */,
 			);
 			path = Source;
@@ -190,6 +201,7 @@
 			children = (
 				4067A85A2045133400427DBB /* UserInfoService.swift */,
 				4067A85B2045133400427DBB /* AccountService.swift */,
+				4067A8C32045301E00427DBB /* LoginService.swift */,
 				4067A85C2045133400427DBB /* Provider */,
 			);
 			path = DataService;
@@ -199,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				4067A85D2045133400427DBB /* MockProviders */,
-				4067A8602045133400427DBB /* BaseProvider */,
+				4067A8BB20452EB300427DBB /* RESTProviders */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -208,18 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				4067A85E2045133400427DBB /* AccountInfoProvider.swift */,
-				4067A85F2045133400427DBB /* UserInfoProvider.swift */,
+				4067A85F2045133400427DBB /* UserInfoMockProvider.swift */,
 			);
 			path = MockProviders;
-			sourceTree = "<group>";
-		};
-		4067A8602045133400427DBB /* BaseProvider */ = {
-			isa = PBXGroup;
-			children = (
-				4067A8612045133400427DBB /* ServiceTaskDelegate.swift */,
-				4067A8622045133400427DBB /* ServiceProvider.swift */,
-			);
-			path = BaseProvider;
 			sourceTree = "<group>";
 		};
 		4067A8652045133400427DBB /* Manager */ = {
@@ -305,6 +308,7 @@
 		4067A87B2045133400427DBB /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				4067A8C52045309F00427DBB /* LoginCredentials.swift */,
 				4067A87C2045133400427DBB /* UserInfo.swift */,
 				4067A87D2045133400427DBB /* TransactionInfo.swift */,
 			);
@@ -332,6 +336,25 @@
 				4067A8B9204519DA00427DBB /* KeychainService.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		4067A8BB20452EB300427DBB /* RESTProviders */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8BC20452EB300427DBB /* BaseProvider */,
+				4067A8C120452F1000427DBB /* LoginProvider.swift */,
+				4067A8C72045380D00427DBB /* UserInfoProvider.swift */,
+			);
+			path = RESTProviders;
+			sourceTree = "<group>";
+		};
+		4067A8BC20452EB300427DBB /* BaseProvider */ = {
+			isa = PBXGroup;
+			children = (
+				4067A8BD20452EB300427DBB /* ServiceTaskDelegate.swift */,
+				4067A8BE20452EB300427DBB /* ServiceProvider.swift */,
+			);
+			path = BaseProvider;
 			sourceTree = "<group>";
 		};
 		72AE6C622036882B00A18376 /* Resource */ = {
@@ -548,20 +571,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4067A8C220452F1000427DBB /* LoginProvider.swift in Sources */,
 				4067A8922045133400427DBB /* PeerToPeer.swift in Sources */,
 				4067A89D2045133400427DBB /* HttpCacheTask.swift in Sources */,
 				4067A88C2045133400427DBB /* AccountInfoProvider.swift in Sources */,
 				4067A89F2045133400427DBB /* UserInfo.swift in Sources */,
-				4067A88E2045133400427DBB /* ServiceTaskDelegate.swift in Sources */,
 				4067A8A32045133400427DBB /* LoginViewController.swift in Sources */,
+				4067A8C020452EB300427DBB /* ServiceProvider.swift in Sources */,
 				4067A89A2045133400427DBB /* PeerUserView.swift in Sources */,
 				4067A8AE2045134E00427DBB /* App.swift in Sources */,
 				4067A8B02045139800427DBB /* Caching.swift in Sources */,
 				4067A8912045133400427DBB /* P2PManager.swift in Sources */,
 				4067A8B82045143600427DBB /* TransactionTableViewCell.swift in Sources */,
+				4067A8BF20452EB300427DBB /* ServiceTaskDelegate.swift in Sources */,
 				4067A8AC2045134E00427DBB /* AppDelegate.swift in Sources */,
 				4067A88A2045133400427DBB /* UserInfoService.swift in Sources */,
+				4067A8C42045301E00427DBB /* LoginService.swift in Sources */,
 				4067A8A82045133400427DBB /* Utililty.swift in Sources */,
+				4067A8C82045380D00427DBB /* UserInfoProvider.swift in Sources */,
+				4067A8CA204550E400427DBB /* main.swift in Sources */,
 				4067A8B6204513E400427DBB /* TimeCachePolicy.swift in Sources */,
 				4067A8A12045133400427DBB /* DashBoardViewController.swift in Sources */,
 				4067A8882045133400427DBB /* Environment.swift in Sources */,
@@ -569,6 +597,7 @@
 				4067A89C2045133400427DBB /* HttpTypes.swift in Sources */,
 				4067A8992045133400427DBB /* RadarAnimationLayer.swift in Sources */,
 				4067A8BA204519DA00427DBB /* KeychainService.swift in Sources */,
+				4067A8C62045309F00427DBB /* LoginCredentials.swift in Sources */,
 				4067A8A52045133400427DBB /* P2PViewController.swift in Sources */,
 				4067A8A42045133400427DBB /* InstantMoneyTransferViewController.swift in Sources */,
 				4067A8B4204513E400427DBB /* CachePolicy.swift in Sources */,
@@ -583,8 +612,7 @@
 				4067A8952045133400427DBB /* PopFilterOptionView.swift in Sources */,
 				4067A8932045133400427DBB /* DataServiceManager.swift in Sources */,
 				4067A8B5204513E400427DBB /* CacheData.swift in Sources */,
-				4067A88D2045133400427DBB /* UserInfoProvider.swift in Sources */,
-				4067A88F2045133400427DBB /* ServiceProvider.swift in Sources */,
+				4067A88D2045133400427DBB /* UserInfoMockProvider.swift in Sources */,
 				4067A8A62045133400427DBB /* AddBeneficiaryViewController.swift in Sources */,
 				4067A8892045133400427DBB /* Development.swift in Sources */,
 			);

@@ -6,11 +6,14 @@
 //  Copyright © 2018 HCL. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class UserInfoProvider: UserInfoService {
+class UserInfoMockProvider: UserInfoService {
+    func getCurrentUserInfo(completion: @escaping ((UserInfo?, Error?) -> Void)) {
+        completion(nil, nil)
+    }
     
-    func getUserInfo(userID: String?, completion: @escaping ((UserInfo?, Error?) -> Void)) {
+    func getUserInfo(userToken userID: String?, completion: @escaping ((UserInfo?, Error?) -> Void)) {
         
         guard userID?.isEmpty == false else {
             completion(nil, nil)
@@ -19,8 +22,7 @@ class UserInfoProvider: UserInfoService {
         
         var accDetail: UserInfo?
         if let users = Users.instanceFromFile("users") as? Users {
-            accDetail = users.getUser(userID: userID)
-            accDetail?.userToken = userID
+            accDetail = users.getUser(userID: userID)            
         }        
         
         completion(accDetail, nil)
@@ -71,8 +73,7 @@ class Users: BaseModel {
         var accDetail: UserInfo?
         
         if let userDict = userDetails?[userID!] as? [String: Any] {
-            accDetail = UserInfo.instanceFromDictionary(userDict) as? UserInfo
-            accDetail?.userToken = userID
+            accDetail = UserInfo.instanceFromDictionary(userDict) as? UserInfo            
         }
         
         return accDetail

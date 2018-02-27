@@ -6,9 +6,20 @@
 //  Copyright © 2018 HCL. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class DataServiceManager {
-    static let userInfoService: UserInfoService = UserInfoProvider()
-    static let accountService: AccountService = AccountProvider()
+    
+    static var loginService: LoginService {
+        return LoginProvider()
+    }
+    
+    static var userInfoService: UserInfoService {
+        return UserInfoProvider()
+    }
+    
+    static var accountService: AccountService {
+        return AccountMockProvider()
+    }
+    
 }

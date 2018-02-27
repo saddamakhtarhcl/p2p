@@ -9,5 +9,6 @@
 import Foundation
 
 protocol UserInfoService {
-    func getUserInfo(userID: String?, completion: @escaping ((UserInfo?, Error?) -> Void))
+    func getUserInfo(userToken: String?, completion: @escaping ((UserInfo?, Error?) -> Void))
+    func getCurrentUserInfo(completion: @escaping ((UserInfo?, Error?) -> Void))
 }

@@ -25,17 +25,17 @@ class HttpTask : Task {
     var urlResponse: URLResponse?
     static var blockAllRequests: Bool = false
     
-    fileprivate var taskResult: Data?
-    fileprivate var taskError: NSError?
-    fileprivate var cancelled: Bool = false
-    fileprivate var delegate: HttpTaskDelegate
+    private var taskResult: Data?
+    private var taskError: NSError?
+    private var cancelled: Bool = false
+    private var taskdelegate: HttpTaskDelegate
     
     fileprivate var dataTask: URLSessionDataTask?
     
     // MARK: - Initializers
     
     init(delegate: HttpTaskDelegate) {
-        self.delegate = delegate
+        self.taskdelegate = delegate
     }
     
     // MARK: - Task Protocol implementation
@@ -138,11 +138,11 @@ class HttpTask : Task {
     // MARK: - Private functions
     
     fileprivate func createRequest() -> URLRequest? {
-        let request = NSMutableURLRequest(url: self.delegate.requestURL)
-        if self.delegate.configureRequest(request) == false {
+        let request = NSMutableURLRequest(url: self.taskdelegate.requestURL)
+        if self.taskdelegate.configureRequest(request) == false {
             return nil
         }
-        if self.delegate.prepareRequest(request) == false {
+        if self.taskdelegate.prepareRequest(request) == false {
             return nil
         }
         return request as URLRequest

@@ -14,6 +14,6 @@ class Development: Environment {
     }
     
     var serviceBaseHostURL: String {
-        return ""
+        return "http://p2ptransfer.azurewebsites.net/api/"
     }
 }

@@ -13,9 +13,7 @@ class AppConfig {
     
     static let environment = environmentFromUserDefinedSetting
     
-    var serviceBaseHostURL: String {
-        return AppConfig.environment.serviceBaseHostURL
-    }        
+    let serviceBaseHostURL: String = AppConfig.environment.serviceBaseHostURL
 
     /**
      * Dynamically create specific environment instance based on user-defined setting

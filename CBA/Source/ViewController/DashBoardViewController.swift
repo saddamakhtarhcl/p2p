@@ -34,13 +34,11 @@ class DashBoardViewController: UIViewController {
         let accountNo = App.user.accountNumber
         lblAccount.text = "Acc No.\n\(accountNo ?? "")"
         lblAccount.accessibilityLabel = "Login Account Number is \(accountNo ?? "")"
+                
+        self.lblBalance.text = "$\(String(format: "%.2f", App.user.balance))"
+        self.lblBalance.accessibilityLabel = "Avalible balance $\(App.user.balance)"
         
-        DataServiceManager.accountService.getCurrentBalance { (balance, _) in
-            self.lblBalance.text = "$\(String(format: "%.2f", balance))"
-            self.lblBalance.accessibilityLabel = "Avalible balance $\(balance)"
-        }
-        
-        imgAvatar.image = UIImage(named: App.user.userToken ?? "") ?? UIImage(named: "avatar")
+        imgAvatar.image = UIImage(named: App.user.userName ?? "") ?? UIImage(named: "avatar")
         self.initLogoutBtn()
     }
     
@@ -79,8 +77,16 @@ class DashBoardViewController: UIViewController {
     }
     
     @IBAction func btnLogout_tap(_ sender: UIButton) {
-        App.user = nil
-        self.navigationController?.popToRootViewController(animated: true)
+        DataServiceManager.loginService.logout { [weak self] (success, error) in
+            DispatchQueue.main.async(execute: {
+                if error == nil && success {
+                    App.user = nil
+                    self?.navigationController?.popToRootViewController(animated: true)
+                } else {
+                    self?.showInvalidDetailsAlert(msg: "Oop's something went wrong !!!")
+                }
+            })
+        }
     }
     
     private func showInvalidDetailsAlert(msg: String) {

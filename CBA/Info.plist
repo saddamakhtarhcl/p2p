@@ -43,5 +43,12 @@
 	</array>
 	<key>Environment</key>
 	<string>$(Environment)</string>
+	<key>NSPrincipalClass</key>
+	<string>AppDelegate</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

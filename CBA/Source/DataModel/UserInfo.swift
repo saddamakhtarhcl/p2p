@@ -15,13 +15,14 @@ class UserInfo: BaseModel {
     private struct JsonKey {
         static let AccountNumber: String          =     "accountNumber"
         static let UserName: String               =     "userName"
+        static let AccountBalance: String         =     "accountBalance"
         static let BranchName: String             =     "branchName"
     }
     
-    // MARK: - Properties
-    var userToken: String?
+    // MARK: - Properties    
     var accountNumber: String?
     var userName: String?
+    var balance: Double = 0
     var branchName: String?
     
     class func instanceFromDictionary(_ dictionary: [String: Any]?) -> Any? {
@@ -53,5 +54,6 @@ class UserInfo: BaseModel {
         self.accountNumber = dictionary?[JsonKey.AccountNumber] as? String
         self.userName = dictionary?[JsonKey.UserName] as? String
         self.branchName = dictionary?[JsonKey.BranchName] as? String
+        self.balance = dictionary?[JsonKey.AccountBalance] as? Double ?? 0
     }
 }

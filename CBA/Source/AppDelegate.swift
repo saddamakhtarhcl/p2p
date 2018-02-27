@@ -8,16 +8,24 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIApplication, UIApplicationDelegate {
     
     var window: UIWindow?
+    
+    // MARK: - UIApplication overrides
+    
+    override func sendEvent(_ event: UIEvent) {
+        super.sendEvent(event)
+        
+        App.resetIdleTimer()
+        
+    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         if Device.isJailBroken {
             abort()
-        }
+        }                
         
         // Override point for customization after application launch.        
         return true

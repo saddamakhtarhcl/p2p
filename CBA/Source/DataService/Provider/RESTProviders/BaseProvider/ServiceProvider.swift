@@ -11,6 +11,8 @@ import Foundation
 
 class ServiceProvider {
     
+    static var accessToken: String?
+    
     // MARK: - Properties
     
     let defaultTimeoutInterval: TimeInterval = 30
@@ -35,13 +37,11 @@ class ServiceProvider {
                     mimeType: MIMEType?,
                     cacheCriteria: CacheCriteria?,
                     executionOnMainQueue: Bool = false,
-                    gzipEncoding: Bool = true,
                     headers:[String: String]? = nil,
                     completionHandler: @escaping (_ data: Data?, _ error: NSError?) -> Void) -> Task? {
         
         let taskDelegate = serviceDelegate(requestURL, httpMethod: HttpMethod.GET,
-            mimeType: mimeType, requestBody: nil,
-            gzipEncoding: gzipEncoding, headers: headers)
+            mimeType: mimeType, requestBody: nil, headers: headers)
         
         return executeService(taskDelegate, cacheCriteria: cacheCriteria,
             executionOnMainQueue: executionOnMainQueue, completionHandler: completionHandler)
@@ -51,21 +51,21 @@ class ServiceProvider {
                       mimeType: MIMEType?,
                       cacheCriteria: CacheCriteria?,
                       executeOnMainQueue: Bool = false,
-                      gzipEncoding: Bool = true,
+                      gzipEncoding: Bool = false,
                       headers:[String: String]? = nil,
                       completionHandler: @escaping (_ data: Data?, _ error: NSError?) -> Void) -> Task? {
         
         let requestURL = serviceBaseHostURL + route
         return getWithURL(requestURL, mimeType: mimeType, cacheCriteria:  cacheCriteria,
                           executionOnMainQueue: executeOnMainQueue,
-                          gzipEncoding: gzipEncoding, headers: headers, completionHandler: completionHandler)
+                          headers: headers, completionHandler: completionHandler)
     }
     
     func postWithRoute(_ route: String,
                        content: Data,
                        mimeType: MIMEType?,
                        executeOnMainQueue: Bool = false,
-                       gzipEncoding: Bool = true,
+                       gzipEncoding: Bool = false,
                        headers:[String: String]? = nil,
                        completionHandler: @escaping (_ data: Data?, _ error: NSError?) -> Void) -> Task? {
         
@@ -73,7 +73,7 @@ class ServiceProvider {
         
         let taskDelegate = serviceDelegate(requestURL, httpMethod: HttpMethod.POST,
                                            mimeType: mimeType, requestBody: content,
-                                           gzipEncoding: gzipEncoding, headers: headers)
+                                           headers: headers)
         
         return executeService(taskDelegate, cacheCriteria: nil,
                               executionOnMainQueue: executeOnMainQueue, completionHandler: completionHandler)
@@ -83,13 +83,12 @@ class ServiceProvider {
                      content: Data,
                      mimeType: MIMEType?,
                      executionOnMainQueue: Bool = false,
-                     gzipEncoding: Bool = true,
                      headers:[String: String]? = nil,
                      completionHandler: @escaping (_ data: Data?, _ error: NSError?) -> Void) -> Task? {
         
         let taskDelegate = serviceDelegate(requestURL, httpMethod: HttpMethod.POST,
                                            mimeType: mimeType, requestBody: content,
-                                           gzipEncoding: gzipEncoding, headers: headers)
+                                           headers: headers)
         
         return executeService(taskDelegate, cacheCriteria: nil,
                               executionOnMainQueue: executionOnMainQueue, completionHandler: completionHandler)
@@ -99,13 +98,12 @@ class ServiceProvider {
                       content: Data,
                       mimeType: MIMEType,
                       executeOnMainQueue: Bool = false,
-                      gzipEncoding: Bool,
                       headers:[String: String]? = nil,
                       completionHandler: @escaping (_ data: Data?, _ error: NSError?) -> Void) -> Task? {
         
         let requestURL = serviceBaseHostURL + route
         let taskDelegate = serviceDelegate(requestURL, httpMethod: HttpMethod.PUT,
-                                           mimeType: mimeType, requestBody: content, gzipEncoding: gzipEncoding, headers: headers)
+                                           mimeType: mimeType, requestBody: content, headers: headers)
         
         return executeService(taskDelegate, cacheCriteria: nil,
                               executionOnMainQueue: executeOnMainQueue, completionHandler: completionHandler)
@@ -114,13 +112,12 @@ class ServiceProvider {
     func deleteWithRoute(_ route: String,
                          mimeType: MIMEType,
                          executeOnMainQueue: Bool = false,
-                         gzipEncoding: Bool = true,
                          headers:[String: String]? = nil,
                          completionHandler: @escaping (_ data: Data?, _ error: NSError?) -> Void) -> Task? {
         
         let requestURL = serviceBaseHostURL + route
         let taskDelegate = serviceDelegate(requestURL, httpMethod: HttpMethod.DELETE,
-                                           mimeType: mimeType, requestBody: nil, gzipEncoding: gzipEncoding, headers: headers)
+                                           mimeType: mimeType, requestBody: nil, headers: headers)
         
         return executeService(taskDelegate, cacheCriteria: nil,
                               executionOnMainQueue: executeOnMainQueue, completionHandler: completionHandler)
@@ -165,7 +162,6 @@ class ServiceProvider {
                                      httpMethod: HttpMethod,
                                      mimeType: MIMEType?,
                                      requestBody: Data?,
-                                     gzipEncoding: Bool,
                                      headers: [String: String]?) -> ServiceTaskDelegate? {
         
         let url = URL(string: requestURL)
@@ -179,7 +175,6 @@ class ServiceProvider {
         
         configureServiceDelegateHeaders(serviceTaskDelegate,
                                         mimeType: mimeType,
-                                        gzipEncoding: gzipEncoding,
                                         headers: headers)
         
         return serviceTaskDelegate
@@ -188,7 +183,6 @@ class ServiceProvider {
     
     fileprivate func configureServiceDelegateHeaders(_ serviceDelegate: ServiceTaskDelegate,
                                                      mimeType: MIMEType?,
-                                                     gzipEncoding: Bool,
                                                      headers: [String: String]?) {
         
         var finalHeaders: [String:String] = headers ?? [:]
@@ -201,16 +195,14 @@ class ServiceProvider {
             if mimeType != nil && finalHeaders[HttpHeader.ContentType] == nil {
                 finalHeaders[HttpHeader.ContentType] = mimeType!.rawValue
             }
-        }
-        
-        if gzipEncoding && finalHeaders[HttpHeader.AcceptEncoding] == nil {
-            finalHeaders[HttpHeader.AcceptEncoding] = MIMEType.Gzip.rawValue
-        }
+        }                
         
         // For safety, in case we request an outside url, this avoids adding
         // the headers to such calls made
         if serviceDelegate.requestURL.host == serviceHost {
-            //
+            if ServiceProvider.accessToken != nil {
+                finalHeaders[HttpHeader.Authorization] = "bearer \(ServiceProvider.accessToken!)"
+            }
         }
         
         serviceDelegate.httpRequestHeaders = finalHeaders

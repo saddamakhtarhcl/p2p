@@ -55,7 +55,7 @@ class PeerUserView: UIView {
         
         lblName.text = prUser.name
         imgAvatar.layer.cornerRadius = imgAvatar.frame.width / 2
-        imgAvatar.image = UIImage(named: prUser.userDetail?.userToken ?? "") ?? UIImage(named: "avatar")        
+        imgAvatar.image = UIImage(named: prUser.userDetail?.userName ?? "") ?? UIImage(named: "avatar")        
     }
     
     // MARK: -

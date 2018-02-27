@@ -34,7 +34,7 @@ class P2PViewController: UIViewController {
     
     var gradientLayer: CAGradientLayer?
     
-    let p2pManager: PeerToPeer = P2PManager(withName: App.user.userToken ?? UIDevice.current.name)
+    let p2pManager: PeerToPeer = P2PManager(withName: App.user.accountNumber ?? UIDevice.current.name)
     var scanAnimationTimer: Timer?
     
     // MARK: - UIViewController overriden methods
@@ -155,7 +155,7 @@ class P2PViewController: UIViewController {
             }, found: { peerId in
                 guard peerId != nil else {return}
                 
-                DataServiceManager.userInfoService.getUserInfo(userID: peerId) { [weak self] (userInfo, _) in
+                DataServiceManager.userInfoService.getUserInfo(userToken: peerId) { [weak self] (userInfo, _) in
                     if userInfo != nil {
                         let newFoundUser = PeerUser(detail: userInfo!)
                         if self?.userAlreadyExists(user: newFoundUser) == false {
@@ -205,7 +205,7 @@ class P2PViewController: UIViewController {
     }
     
     private func userAlreadyExists(user: PeerUser) -> Bool {
-        return foundUsers.contains { user.userDetail?.userToken == $0.userDetail?.userToken }
+        return foundUsers.contains { user.userDetail?.accountNumber == $0.userDetail?.accountNumber }
     }
     
     private func addUserView(user: PeerUser) {
@@ -235,7 +235,6 @@ class P2PViewController: UIViewController {
             UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, userView)
             //UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, userView)
         }
-        
 
         self.view.addSubview(userView)
         self.view.bringSubview(toFront: userView)
