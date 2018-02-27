@@ -13,19 +13,31 @@ class DashBoardViewController: UIViewController {
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lblAccount: UILabel!
     @IBOutlet weak var lblBalance: UILabel!
+    @IBOutlet weak var btnP2P: UIButton!
+    @IBOutlet weak var btnTransaction: UIButton!
+    
+    private let lblAccountAccessibilityText = ""
+    
     static let segueID: String = "DashBoardSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
+        
+        self.accessibilityElements = [lblAccount, lblBalance, btnP2P, btnTransaction]
+        btnP2P.accessibilityLabel = "peer to peer"
+        btnTransaction.accessibilityLabel = "Tap to View transactions"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let accountNo = App.user.accountNumber
         lblAccount.text = "Acc No.\n\(accountNo ?? "")"
+        lblAccount.accessibilityLabel = "Login Account Number is \(accountNo ?? "")"
+        
         DataServiceManager.accountService.getCurrentBalance { (balance, _) in
             self.lblBalance.text = "$\(String(format: "%.2f", balance))"
+            self.lblBalance.accessibilityLabel = "Avalible balance $\(balance)"
         }
         
         imgAvatar.image = UIImage(named: App.user.userToken ?? "") ?? UIImage(named: "avatar")

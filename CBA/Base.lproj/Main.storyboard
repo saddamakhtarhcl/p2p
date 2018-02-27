@@ -231,6 +231,8 @@
                         <viewLayoutGuide key="safeArea" id="WIT-ZI-7du"/>
                     </view>
                     <connections>
+                        <outlet property="btnP2P" destination="ooR-kv-x3R" id="FNd-bb-14V"/>
+                        <outlet property="btnTransaction" destination="01G-0q-R8w" id="wES-3J-GIW"/>
                         <outlet property="imgAvatar" destination="7l2-vV-Jut" id="CRF-1D-YWO"/>
                         <outlet property="lblAccount" destination="U2t-P4-YRw" id="tV8-90-VHm"/>
                         <outlet property="lblBalance" destination="iFt-lc-zVl" id="gnw-rL-AYz"/>
@@ -256,6 +258,9 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visibility Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t6-tf-L2f">
                                 <rect key="frame" x="206" y="84" width="96" height="19.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

@@ -20,6 +20,11 @@ class P2PViewController: UIViewController {
     private let strFindUser: String = "Find Users"
     private let strStopScan: String = "Stop Scan"
     
+    private let visibilityOnAccessabilityLabel: String = "bluetooth visibility on"
+    private let visibilityOffAccessabilityLabel: String = "bluetooth visibility off"
+    private let findUserAccessabilityLabel: String = "Scan new by bluetooth users"
+    private let stopScanAccessabilityLabel: String = "Stop scanning new by bluetooth users"
+    
     @IBOutlet weak var switchVisibility: UISwitch!
     @IBOutlet weak var lblVisibility: UILabel!
     @IBOutlet weak var scanView: BackgroundViewView!
@@ -37,6 +42,8 @@ class P2PViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Peer to peer"
+        self.initBackBtn()
+        self.accessibilitySetUp()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -52,6 +59,30 @@ class P2PViewController: UIViewController {
         self.applyGradient()        
     }
     
+    private func initBackBtn() {
+        let leftButtonItem = UIBarButtonItem.init(
+            image: UIImage(named: "back")?.withRenderingMode(.alwaysOriginal),
+            style: .done,
+            target: self,
+            action: #selector(P2PViewController.btnBacktap)
+        )
+        self.navigationItem.leftBarButtonItem = leftButtonItem
+    }
+    
+    @objc func btnBacktap() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func accessibilitySetUp() {
+        switchVisibility.accessibilityLabel = visibilityOnAccessabilityLabel
+        self.setScanBtnAccessibility()
+        findUserBtn.accessibilityTraits = UIAccessibilityTraitButton
+    }
+    
+    private func setScanBtnAccessibility() {
+        findUserBtn.accessibilityLabel = p2pManager.isScanning ? stopScanAccessabilityLabel : findUserAccessabilityLabel
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()
         backItem.title = ""
@@ -62,6 +93,11 @@ class P2PViewController: UIViewController {
     
     @IBAction func switchValueChange(_ sender: UISwitch) {
         broadcast = sender.isOn
+        if sender.isOn == true {
+            switchVisibility.accessibilityLabel = visibilityOnAccessabilityLabel
+        } else {
+            switchVisibility.accessibilityLabel = visibilityOffAccessabilityLabel
+        }
     }
     
     @IBAction func btnScanTapped(_ sender: UIButton) {
@@ -69,15 +105,20 @@ class P2PViewController: UIViewController {
             p2pManager.stopScan()
             stopScanAnimation()
             sender.setTitle(strFindUser, for: .normal)
+            self.setScanBtnAccessibility()
+            //UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, "Stopped scanning near by user and Find user enabled")
         } else {
             startScan(status: { [weak self] (flag) in
                 if flag {
                     sender.setTitle(self?.strStopScan, for: .normal)
+                    self?.setScanBtnAccessibility()
                 } else {
                     sender.setTitle(self?.strFindUser, for: .normal)
+                    self?.setScanBtnAccessibility()
                 }
             })
         }
+        
     }
     
     private func stopScaning() {
@@ -85,6 +126,7 @@ class P2PViewController: UIViewController {
             p2pManager.stopScan()
             stopScanAnimation()
             findUserBtn.setTitle(strFindUser, for: .normal)
+            self.setScanBtnAccessibility()
         }
     }
     
@@ -187,7 +229,14 @@ class P2PViewController: UIViewController {
         userView.frame = viewFrame
         
         userView.transform = CGAffineTransform.init(scaleX: 0.0, y: 0.0)
+        userView.isAccessibilityElement = true
+        userView.accessibilityLabel = user.userDetail?.userName
+        if foundUsers.count == 1 {
+            UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, userView)
+            //UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, userView)
+        }
         
+
         self.view.addSubview(userView)
         self.view.bringSubview(toFront: userView)
         
@@ -232,7 +281,6 @@ class P2PViewController: UIViewController {
             
             self.present(optionController, animated: true, completion: nil)
         }
-        
     }
     
     private func applyGradient() {
