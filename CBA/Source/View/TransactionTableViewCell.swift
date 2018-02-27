@@ -26,9 +26,16 @@ class TransactionTableViewCell: UITableViewCell {
     }
     
     func configure(transaction: TransactionInfo) {
-        cell.accountNumberLbl.text = transaction.accountNo
-        cell.amountLbl.text = "$\(String(format: "%.2f", transaction.amount))"
-        cell.dateLbl.text = self.currentDate(date: transaction.date!)
-        cell.remark.text = transaction.remark
+        self.accountNumberLbl.text = transaction.accountNo
+        self.amountLbl.text = "$\(String(format: "%.2f", transaction.amount))"
+        self.dateLbl.text = transaction.date != nil ? self.currentDate(date: transaction.date!) : nil
+        self.remark.text = transaction.remark
+    }
+    
+    private func currentDate(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd MMM yyyy HH:mm"
+        let result = formatter.string(from: date)
+        return result
     }
 }

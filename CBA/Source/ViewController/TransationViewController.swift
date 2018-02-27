@@ -23,13 +23,7 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
                                                           completion: { (transactions, _) in
                                                             self.trancations = transactions
         })
-    }
-    private func currentDate(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMM yyyy HH:mm"
-        let result = formatter.string(from: date)
-        return result
-    }
+    }    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -17,7 +17,9 @@ class AppDelegate: UIApplication, UIApplicationDelegate {
     override func sendEvent(_ event: UIEvent) {
         super.sendEvent(event)
         
-        App.resetIdleTimer()
+        if event.type == .touches {
+            App.resetIdleTimer()
+        }
         
     }
     
