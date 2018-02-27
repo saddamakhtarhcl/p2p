@@ -47,6 +47,7 @@
 		4067A8B5204513E400427DBB /* CacheData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B2204513E300427DBB /* CacheData.swift */; };
 		4067A8B6204513E400427DBB /* TimeCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B3204513E400427DBB /* TimeCachePolicy.swift */; };
 		4067A8B82045143600427DBB /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B72045143600427DBB /* TransactionTableViewCell.swift */; };
+		4067A8BA204519DA00427DBB /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8B9204519DA00427DBB /* KeychainService.swift */; };
 		72AE6C642036882C00A18376 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AE6C632036882B00A18376 /* users.json */; };
 		A2464CCC2032A6B20073C9B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCA2032A6B20073C9B2 /* Main.storyboard */; };
 		A2464CCE2032A6B20073C9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCD2032A6B20073C9B2 /* Assets.xcassets */; };
@@ -117,6 +118,7 @@
 		4067A8B2204513E300427DBB /* CacheData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheData.swift; sourceTree = "<group>"; };
 		4067A8B3204513E400427DBB /* TimeCachePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCachePolicy.swift; sourceTree = "<group>"; };
 		4067A8B72045143600427DBB /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		4067A8B9204519DA00427DBB /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		72AE6C632036882B00A18376 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		A2464CC32032A6B20073C9B2 /* CBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2464CCB2032A6B20073C9B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			children = (
 				4067A8862045133400427DBB /* BaseModel.swift */,
 				4067A8872045133400427DBB /* Utililty.swift */,
+				4067A8B9204519DA00427DBB /* KeychainService.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				4067A8A02045133400427DBB /* TransactionInfo.swift in Sources */,
 				4067A89C2045133400427DBB /* HttpTypes.swift in Sources */,
 				4067A8992045133400427DBB /* RadarAnimationLayer.swift in Sources */,
+				4067A8BA204519DA00427DBB /* KeychainService.swift in Sources */,
 				4067A8A52045133400427DBB /* P2PViewController.swift in Sources */,
 				4067A8A42045133400427DBB /* InstantMoneyTransferViewController.swift in Sources */,
 				4067A8B4204513E400427DBB /* CachePolicy.swift in Sources */,
