@@ -17,12 +17,12 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
         trancactionTbl.dataSource = self
         trancactionTbl.delegate = self
         trancactionTbl.separatorColor = UIColor.clear
+        
         DataServiceManager.accountService.getTransactions(startDate: nil,
                                                           endDate: nil,
                                                           completion: { (transactions, _) in
                                                             self.trancations = transactions
         })
-        // Do any additional setup after loading the view.
     }
     private func currentDate(date: Date) -> String {
         let formatter = DateFormatter()
@@ -43,10 +43,7 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableViewCell") as? TransactionTableViewCell {
             let transaction: TransactionInfo = trancations[indexPath.item]
-            cell.accountNumberLbl.text = transaction.accountNo
-            cell.amountLbl.text = "$\(String(format: "%.2f", transaction.amount))"
-            cell.dateLbl.text = self.currentDate(date: transaction.date!)
-            cell.remark.text = transaction.remark
+            cell.configure(transaction: transaction)
             return cell
         }
         return UITableViewCell()

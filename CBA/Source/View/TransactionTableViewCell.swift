@@ -25,4 +25,10 @@ class TransactionTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(transaction: TransactionInfo) {
+        cell.accountNumberLbl.text = transaction.accountNo
+        cell.amountLbl.text = "$\(String(format: "%.2f", transaction.amount))"
+        cell.dateLbl.text = self.currentDate(date: transaction.date!)
+        cell.remark.text = transaction.remark
+    }
 }

@@ -257,10 +257,10 @@
 				4067A8B72045143600427DBB /* TransactionTableViewCell.swift */,
 				4067A86C2045133400427DBB /* BackgroundViewView.swift */,
 				4067A86D2045133400427DBB /* PopFilterOptionView.swift */,
-				4067A86E2045133400427DBB /* XIB */,
 				4067A8712045133400427DBB /* UserActionPopViewController.swift */,
 				4067A8722045133400427DBB /* RadarAnimationLayer.swift */,
 				4067A8732045133400427DBB /* PeerUserView.swift */,
+				4067A86E2045133400427DBB /* XIB */,
 			);
 			path = View;
 			sourceTree = "<group>";
