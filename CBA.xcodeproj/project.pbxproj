@@ -65,7 +65,6 @@
 		A2464CD12032A6B20073C9B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2464CCF2032A6B20073C9B2 /* LaunchScreen.storyboard */; };
 		A27D7A3B203D3153001A9BBD /* CBATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A3A203D3153001A9BBD /* CBATests.swift */; };
 		A27D7A43203D32F4001A9BBD /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A42203D32F4001A9BBD /* LoginViewControllerTest.swift */; };
-		A27D7A45203D38E1001A9BBD /* P2PViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A44203D38E1001A9BBD /* P2PViewControllerTest.swift */; };
 		A27D7A49203D3C98001A9BBD /* P2PManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A48203D3C98001A9BBD /* P2PManagerTest.swift */; };
 		A27D7A4B203D48A6001A9BBD /* AddBeneficiaryViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A4A203D48A6001A9BBD /* AddBeneficiaryViewControllerTest.swift */; };
 		A27D7A4D203D48B4001A9BBD /* InstantMoneyTransferViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D7A4C203D48B4001A9BBD /* InstantMoneyTransferViewControllerTest.swift */; };
@@ -150,7 +149,6 @@
 		A27D7A3A203D3153001A9BBD /* CBATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBATests.swift; sourceTree = "<group>"; };
 		A27D7A3C203D3153001A9BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27D7A42203D32F4001A9BBD /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
-		A27D7A44203D38E1001A9BBD /* P2PViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PViewControllerTest.swift; sourceTree = "<group>"; };
 		A27D7A48203D3C98001A9BBD /* P2PManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PManagerTest.swift; sourceTree = "<group>"; };
 		A27D7A4A203D48A6001A9BBD /* AddBeneficiaryViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeneficiaryViewControllerTest.swift; sourceTree = "<group>"; };
 		A27D7A4C203D48B4001A9BBD /* InstantMoneyTransferViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantMoneyTransferViewControllerTest.swift; sourceTree = "<group>"; };
@@ -451,7 +449,6 @@
 			children = (
 				A27D7A3A203D3153001A9BBD /* CBATests.swift */,
 				A27D7A42203D32F4001A9BBD /* LoginViewControllerTest.swift */,
-				A27D7A44203D38E1001A9BBD /* P2PViewControllerTest.swift */,
 				A27D7A4A203D48A6001A9BBD /* AddBeneficiaryViewControllerTest.swift */,
 				A27D7A4C203D48B4001A9BBD /* InstantMoneyTransferViewControllerTest.swift */,
 				A27D7A5A203D789D001A9BBD /* DataModel */,
@@ -688,7 +685,6 @@
 				A27D7A5E203D79C6001A9BBD /* UserInfoProviderTest.swift in Sources */,
 				A27D7A5C203D78AF001A9BBD /* UserInfoTest.swift in Sources */,
 				A27D7A3B203D3153001A9BBD /* CBATests.swift in Sources */,
-				A27D7A45203D38E1001A9BBD /* P2PViewControllerTest.swift in Sources */,
 				A27D7A55203D5AD9001A9BBD /* PeerUserViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
