@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40168C9320464FAF00197958 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168C9220464FAF00197958 /* StringUtils.swift */; };
 		4067A8882045133400427DBB /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8572045133400427DBB /* Environment.swift */; };
 		4067A8892045133400427DBB /* Development.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8582045133400427DBB /* Development.swift */; };
 		4067A88A2045133400427DBB /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85A2045133400427DBB /* UserInfoService.swift */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40168C9220464FAF00197958 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		4067A853204512C500427DBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4067A8572045133400427DBB /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		4067A8582045133400427DBB /* Development.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Development.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				4067A8862045133400427DBB /* BaseModel.swift */,
 				4067A8872045133400427DBB /* Utililty.swift */,
 				4067A8B9204519DA00427DBB /* KeychainService.swift */,
+				40168C9220464FAF00197958 /* StringUtils.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				4067A8942045133400427DBB /* BackgroundViewView.swift in Sources */,
 				4067A89E2045133400427DBB /* Task.swift in Sources */,
 				4067A8A72045133400427DBB /* BaseModel.swift in Sources */,
+				40168C9320464FAF00197958 /* StringUtils.swift in Sources */,
 				4067A8AD2045134E00427DBB /* AppConfig.swift in Sources */,
 				4067A8982045133400427DBB /* UserActionPopViewController.swift in Sources */,
 				4067A8952045133400427DBB /* PopFilterOptionView.swift in Sources */,
