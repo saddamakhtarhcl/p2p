@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		40168C9320464FAF00197958 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168C9220464FAF00197958 /* StringUtils.swift */; };
+		40168C962046578E00197958 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168C952046578E00197958 /* BaseViewController.swift */; };
+		40168C99204658D800197958 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168C98204658D800197958 /* BaseView.swift */; };
+		40168C9B2046591A00197958 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168C9A2046591A00197958 /* BaseTableViewCell.swift */; };
+		40168C9F20465B0C00197958 /* RadarAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168C9D20465B0C00197958 /* RadarAnimationLayer.swift */; };
+		40168CA020465B0C00197958 /* SpiralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168C9E20465B0C00197958 /* SpiralView.swift */; };
+		40168CA320465BDF00197958 /* PeerUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168CA220465BDF00197958 /* PeerUser.swift */; };
+		40168CA520465C3D00197958 /* PeerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40168CA420465C3D00197958 /* PeerFeature.swift */; };
 		4067A8882045133400427DBB /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8572045133400427DBB /* Environment.swift */; };
 		4067A8892045133400427DBB /* Development.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8582045133400427DBB /* Development.swift */; };
 		4067A88A2045133400427DBB /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A85A2045133400427DBB /* UserInfoService.swift */; };
@@ -17,12 +24,10 @@
 		4067A8912045133400427DBB /* P2PManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8672045133400427DBB /* P2PManager.swift */; };
 		4067A8922045133400427DBB /* PeerToPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8682045133400427DBB /* PeerToPeer.swift */; };
 		4067A8932045133400427DBB /* DataServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A86A2045133400427DBB /* DataServiceManager.swift */; };
-		4067A8942045133400427DBB /* BackgroundViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A86C2045133400427DBB /* BackgroundViewView.swift */; };
 		4067A8952045133400427DBB /* PopFilterOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A86D2045133400427DBB /* PopFilterOptionView.swift */; };
 		4067A8962045133400427DBB /* PopFilterOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4067A86F2045133400427DBB /* PopFilterOptionView.xib */; };
 		4067A8972045133400427DBB /* PeerUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4067A8702045133400427DBB /* PeerUserView.xib */; };
 		4067A8982045133400427DBB /* UserActionPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8712045133400427DBB /* UserActionPopViewController.swift */; };
-		4067A8992045133400427DBB /* RadarAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8722045133400427DBB /* RadarAnimationLayer.swift */; };
 		4067A89A2045133400427DBB /* PeerUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8732045133400427DBB /* PeerUserView.swift */; };
 		4067A89B2045133400427DBB /* HttpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8772045133400427DBB /* HttpTask.swift */; };
 		4067A89C2045133400427DBB /* HttpTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067A8782045133400427DBB /* HttpTypes.swift */; };
@@ -84,6 +89,13 @@
 
 /* Begin PBXFileReference section */
 		40168C9220464FAF00197958 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		40168C952046578E00197958 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		40168C98204658D800197958 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		40168C9A2046591A00197958 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		40168C9D20465B0C00197958 /* RadarAnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarAnimationLayer.swift; sourceTree = "<group>"; };
+		40168C9E20465B0C00197958 /* SpiralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralView.swift; sourceTree = "<group>"; };
+		40168CA220465BDF00197958 /* PeerUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerUser.swift; sourceTree = "<group>"; };
+		40168CA420465C3D00197958 /* PeerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerFeature.swift; sourceTree = "<group>"; };
 		4067A853204512C500427DBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4067A8572045133400427DBB /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		4067A8582045133400427DBB /* Development.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Development.swift; sourceTree = "<group>"; };
@@ -94,12 +106,10 @@
 		4067A8672045133400427DBB /* P2PManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PManager.swift; sourceTree = "<group>"; };
 		4067A8682045133400427DBB /* PeerToPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerToPeer.swift; sourceTree = "<group>"; };
 		4067A86A2045133400427DBB /* DataServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceManager.swift; sourceTree = "<group>"; };
-		4067A86C2045133400427DBB /* BackgroundViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewView.swift; sourceTree = "<group>"; };
 		4067A86D2045133400427DBB /* PopFilterOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopFilterOptionView.swift; sourceTree = "<group>"; };
 		4067A86F2045133400427DBB /* PopFilterOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopFilterOptionView.xib; sourceTree = "<group>"; };
 		4067A8702045133400427DBB /* PeerUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeerUserView.xib; sourceTree = "<group>"; };
 		4067A8712045133400427DBB /* UserActionPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActionPopViewController.swift; sourceTree = "<group>"; };
-		4067A8722045133400427DBB /* RadarAnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarAnimationLayer.swift; sourceTree = "<group>"; };
 		4067A8732045133400427DBB /* PeerUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerUserView.swift; sourceTree = "<group>"; };
 		4067A8772045133400427DBB /* HttpTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTask.swift; sourceTree = "<group>"; };
 		4067A8782045133400427DBB /* HttpTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTypes.swift; sourceTree = "<group>"; };
@@ -170,6 +180,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40168C942046577F00197958 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				40168C952046578E00197958 /* BaseViewController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		40168C97204658CB00197958 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				40168C98204658D800197958 /* BaseView.swift */,
+				40168C9A2046591A00197958 /* BaseTableViewCell.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		40168C9C20465AEF00197958 /* AnimationLayers */ = {
+			isa = PBXGroup;
+			children = (
+				40168C9D20465B0C00197958 /* RadarAnimationLayer.swift */,
+				40168C9E20465B0C00197958 /* SpiralView.swift */,
+			);
+			path = AnimationLayers;
+			sourceTree = "<group>";
+		};
+		40168CA120465BCD00197958 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40168CA220465BDF00197958 /* PeerUser.swift */,
+				40168CA420465C3D00197958 /* PeerFeature.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4067A8552045133400427DBB /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,13 +301,14 @@
 		4067A86B2045133400427DBB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40168C97204658CB00197958 /* BaseView */,
+				4067A8732045133400427DBB /* PeerUserView.swift */,
 				4067A8B72045143600427DBB /* TransactionTableViewCell.swift */,
-				4067A86C2045133400427DBB /* BackgroundViewView.swift */,
 				4067A86D2045133400427DBB /* PopFilterOptionView.swift */,
 				4067A8712045133400427DBB /* UserActionPopViewController.swift */,
-				4067A8722045133400427DBB /* RadarAnimationLayer.swift */,
-				4067A8732045133400427DBB /* PeerUserView.swift */,
+				40168CA120465BCD00197958 /* ViewModel */,
 				4067A86E2045133400427DBB /* XIB */,
+				40168C9C20465AEF00197958 /* AnimationLayers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,12 +366,13 @@
 		4067A87E2045133400427DBB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4067A87F2045133400427DBB /* DashBoardViewController.swift */,
-				4067A8802045133400427DBB /* TransationViewController.swift */,
+				40168C942046577F00197958 /* BaseController */,
 				4067A8812045133400427DBB /* LoginViewController.swift */,
-				4067A8822045133400427DBB /* InstantMoneyTransferViewController.swift */,
+				4067A87F2045133400427DBB /* DashBoardViewController.swift */,
 				4067A8832045133400427DBB /* P2PViewController.swift */,
+				4067A8822045133400427DBB /* InstantMoneyTransferViewController.swift */,
 				4067A8842045133400427DBB /* AddBeneficiaryViewController.swift */,
+				4067A8802045133400427DBB /* TransationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -577,6 +624,7 @@
 				4067A8C220452F1000427DBB /* LoginProvider.swift in Sources */,
 				4067A8922045133400427DBB /* PeerToPeer.swift in Sources */,
 				4067A89D2045133400427DBB /* HttpCacheTask.swift in Sources */,
+				40168C962046578E00197958 /* BaseViewController.swift in Sources */,
 				4067A88C2045133400427DBB /* AccountInfoProvider.swift in Sources */,
 				4067A89F2045133400427DBB /* UserInfo.swift in Sources */,
 				4067A8A32045133400427DBB /* LoginViewController.swift in Sources */,
@@ -589,6 +637,7 @@
 				4067A8BF20452EB300427DBB /* ServiceTaskDelegate.swift in Sources */,
 				4067A8AC2045134E00427DBB /* AppDelegate.swift in Sources */,
 				4067A88A2045133400427DBB /* UserInfoService.swift in Sources */,
+				40168C9B2046591A00197958 /* BaseTableViewCell.swift in Sources */,
 				4067A8C42045301E00427DBB /* LoginService.swift in Sources */,
 				4067A8A82045133400427DBB /* Utililty.swift in Sources */,
 				4067A8C82045380D00427DBB /* UserInfoProvider.swift in Sources */,
@@ -598,27 +647,30 @@
 				4067A8882045133400427DBB /* Environment.swift in Sources */,
 				4067A8A02045133400427DBB /* TransactionInfo.swift in Sources */,
 				4067A89C2045133400427DBB /* HttpTypes.swift in Sources */,
-				4067A8992045133400427DBB /* RadarAnimationLayer.swift in Sources */,
 				4067A8BA204519DA00427DBB /* KeychainService.swift in Sources */,
+				40168C9F20465B0C00197958 /* RadarAnimationLayer.swift in Sources */,
 				4067A8C62045309F00427DBB /* LoginCredentials.swift in Sources */,
 				4067A8A52045133400427DBB /* P2PViewController.swift in Sources */,
 				4067A8A42045133400427DBB /* InstantMoneyTransferViewController.swift in Sources */,
 				4067A8B4204513E400427DBB /* CachePolicy.swift in Sources */,
 				4067A8A22045133400427DBB /* TransationViewController.swift in Sources */,
 				4067A89B2045133400427DBB /* HttpTask.swift in Sources */,
+				40168CA520465C3D00197958 /* PeerFeature.swift in Sources */,
 				4067A88B2045133400427DBB /* AccountService.swift in Sources */,
-				4067A8942045133400427DBB /* BackgroundViewView.swift in Sources */,
 				4067A89E2045133400427DBB /* Task.swift in Sources */,
 				4067A8A72045133400427DBB /* BaseModel.swift in Sources */,
+				40168CA320465BDF00197958 /* PeerUser.swift in Sources */,
 				40168C9320464FAF00197958 /* StringUtils.swift in Sources */,
 				4067A8AD2045134E00427DBB /* AppConfig.swift in Sources */,
 				4067A8982045133400427DBB /* UserActionPopViewController.swift in Sources */,
 				4067A8952045133400427DBB /* PopFilterOptionView.swift in Sources */,
+				40168CA020465B0C00197958 /* SpiralView.swift in Sources */,
 				4067A8932045133400427DBB /* DataServiceManager.swift in Sources */,
 				4067A8B5204513E400427DBB /* CacheData.swift in Sources */,
 				4067A88D2045133400427DBB /* UserInfoMockProvider.swift in Sources */,
 				4067A8A62045133400427DBB /* AddBeneficiaryViewController.swift in Sources */,
 				4067A8892045133400427DBB /* Development.swift in Sources */,
+				40168C99204658D800197958 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

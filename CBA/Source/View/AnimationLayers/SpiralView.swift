@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class BackgroundViewView: UIView {
+class SpiralView: UIView {
     
     private var layers = [CAShapeLayer]()
     

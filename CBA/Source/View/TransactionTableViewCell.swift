@@ -8,7 +8,8 @@
 
 import UIKit
 
-class TransactionTableViewCell: UITableViewCell {
+class TransactionTableViewCell: BaseTableViewCell {
+    
     @IBOutlet weak var accountNumberLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var remark: UILabel!

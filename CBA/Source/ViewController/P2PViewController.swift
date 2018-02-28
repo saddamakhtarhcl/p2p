@@ -8,7 +8,7 @@
 
 import UIKit
 
-class P2PViewController: UIViewController {
+class P2PViewController: BaseViewController {
     
     static let segueID: String = "P2PSegue"
     
@@ -27,7 +27,7 @@ class P2PViewController: UIViewController {
     
     @IBOutlet weak var switchVisibility: UISwitch!
     @IBOutlet weak var lblVisibility: UILabel!
-    @IBOutlet weak var scanView: BackgroundViewView!
+    @IBOutlet weak var scanView: SpiralView!
     @IBOutlet weak var findUserBtn: UIButton!
     
     var foundUsers: [PeerUser] = []

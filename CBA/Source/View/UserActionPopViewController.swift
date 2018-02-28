@@ -13,14 +13,14 @@ class UserActionPopViewController: UIViewController {
     @IBOutlet var optionStackView: UIStackView?
     var selectedIndexChanged: ((Int) -> Void)?
     fileprivate var optionsView: [PopFilterOptionView] = [PopFilterOptionView]()
-    var userOptionsArray: [UserOptions] = []
+    var userOptionsArray: [PeerFeature] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userOptionsArray.append(UserOptions.init(option: "Add Beneficiary"))
-        userOptionsArray.append(UserOptions.init(option: "Instant Transfer"))
+        
+        userOptionsArray.append(PeerFeature.init(option: "Add Beneficiary"))
+        userOptionsArray.append(PeerFeature.init(option: "Instant Transfer"))
         createStackView()
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,13 +55,4 @@ class UserActionPopViewController: UIViewController {
         }
     }
     
-}
-
-class UserOptions {
-    var optionlabel: String
-    var isSelected: Bool = false
-    
-    init(option: String) {
-        self.optionlabel = option
-    }
 }

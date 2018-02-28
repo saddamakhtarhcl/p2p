@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashBoardViewController: UIViewController {
+class DashBoardViewController: BaseViewController {
     
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lblAccount: UILabel!

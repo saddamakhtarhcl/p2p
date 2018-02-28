@@ -8,10 +8,14 @@
 
 import UIKit
 
-class TransactionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TransactionViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+    
     static let segueID: String = "TransationSegue"
+    
     var trancations: [TransactionInfo] = []
+    
     @IBOutlet weak var trancactionTbl: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         trancactionTbl.dataSource = self

@@ -6,7 +6,7 @@
 
 import UIKit
 
-class PopFilterOptionView: UIView {
+class PopFilterOptionView: BaseView {
     
     @IBOutlet weak var optionTitle: UILabel!
     @IBOutlet weak var bottomLine: UILabel!

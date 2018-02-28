@@ -9,18 +9,7 @@
 import Foundation
 import UIKit
 
-class PeerUser {
-    var name: String
-    var imageUrl: URL?
-    var userDetail: UserInfo?
-    
-    init(detail: UserInfo) {
-        self.userDetail = detail
-        self.name = detail.userName!
-    }
-}
-
-class PeerUserView: UIView {
+class PeerUserView: BaseView {
     
     @IBOutlet private weak var lblName: UILabel!
     @IBOutlet private weak var imgAvatar: UIImageView!

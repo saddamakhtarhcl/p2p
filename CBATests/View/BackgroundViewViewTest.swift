@@ -9,7 +9,7 @@
 import XCTest
 @testable import CBA
 class BackgroundViewViewTest: XCTestCase {
-    var backGroundViewObj: BackgroundViewView?
+    var backGroundViewObj: SpiralView?
     override func setUp() {
         super.setUp()
         //backGroundViewObj = BackgroundViewView(coder: <#NSCoder#>)
