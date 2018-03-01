@@ -12,11 +12,16 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
     static let segueID: String = "TransationSegue"
     var trancations: [TransactionInfo] = []
     @IBOutlet weak var trancactionTbl: UITableView!
+    @IBOutlet weak var lblSentTo: UILabel!
+    @IBOutlet weak var lblDebit: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         trancactionTbl.dataSource = self
         trancactionTbl.delegate = self
         trancactionTbl.separatorColor = UIColor.clear
+        self.navigationItem.title = "Transactions"
         DataServiceManager.accountService.getTransactions(startDate: nil,
                                                           endDate: nil,
                                                           completion: { (transactions, _) in

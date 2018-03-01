@@ -18,10 +18,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblNetBank.adjustsFontForContentSizeCategory = true
-        lblNetBank.font = UIFont.preferredFont(forTextStyle: .body)
-        lblLoginTitle.adjustsFontForContentSizeCategory = true
-        lblLoginTitle.font = UIFont.preferredFont(forTextStyle: .body)
+        self.accessibilitySetUp()
         navigationController?.navigationBar.barTintColor = UIColor.init(red: 133.0/255.0,
                                                                         green: 163.0/255.0,
                                                                         blue: 165.0/255.0,
@@ -32,6 +29,13 @@ class LoginViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func accessibilitySetUp() {
+        lblNetBank.adjustsFontForContentSizeCategory = true
+        lblNetBank.font = UIFont.preferredFont(forTextStyle: .body)
+        lblLoginTitle.adjustsFontForContentSizeCategory = true
+        lblLoginTitle.font = UIFont.preferredFont(forTextStyle: .body)
     }
     
     @IBAction func loginBtnTapped(_ sender: UIButton) {

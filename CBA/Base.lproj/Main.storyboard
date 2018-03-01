@@ -353,8 +353,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITe-18-E7I">
+                                                    <rect key="frame" x="20" y="10" width="55" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7007056897" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-ZO-xY9">
-                                                    <rect key="frame" x="20" y="10" width="99.5" height="21"/>
+                                                    <rect key="frame" x="95" y="10" width="99.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -365,8 +371,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wm-AZ-xjq">
-                                                    <rect key="frame" x="20" y="72" width="41" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Od-ng-eNS">
+                                                    <rect key="frame" x="314" y="41" width="41" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wm-AZ-xjq">
+                                                    <rect key="frame" x="20" y="72" width="58.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -386,6 +398,7 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="4Od-ng-eNS" firstAttribute="top" secondItem="TXD-U9-wwQ" secondAttribute="top" id="04X-YH-LPf"/>
                                                 <constraint firstItem="Oaf-Ou-qft" firstAttribute="top" secondItem="B5D-hz-O13" secondAttribute="bottom" constant="6" id="4W5-Ol-OJF"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Wm-AZ-xjq" secondAttribute="trailing" constant="20" symbolic="YES" id="4dH-oh-iv3"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TXD-U9-wwQ" secondAttribute="trailing" constant="20" symbolic="YES" id="530-x0-0sE"/>
@@ -396,11 +409,14 @@
                                                 <constraint firstItem="5Wm-AZ-xjq" firstAttribute="top" secondItem="TXD-U9-wwQ" secondAttribute="bottom" constant="10" id="VIl-Hp-cGR"/>
                                                 <constraint firstAttribute="trailing" secondItem="B5D-hz-O13" secondAttribute="trailing" constant="20" id="fTe-t6-42t"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LZC-ZO-xY9" secondAttribute="trailing" constant="20" symbolic="YES" id="gKg-g8-Crg"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Od-ng-eNS" secondAttribute="trailing" constant="20" id="gT4-9Z-c3Z"/>
+                                                <constraint firstItem="LZC-ZO-xY9" firstAttribute="leading" secondItem="ITe-18-E7I" secondAttribute="trailing" constant="20" id="iv4-Go-avP"/>
+                                                <constraint firstItem="ITe-18-E7I" firstAttribute="top" secondItem="4B7-BE-MW0" secondAttribute="top" constant="10" id="jEg-w0-avt"/>
                                                 <constraint firstItem="TXD-U9-wwQ" firstAttribute="top" secondItem="LZC-ZO-xY9" secondAttribute="bottom" constant="10" id="kfG-OJ-kUc"/>
                                                 <constraint firstItem="LZC-ZO-xY9" firstAttribute="top" secondItem="4B7-BE-MW0" secondAttribute="top" constant="10" id="lhv-Sb-2Et"/>
                                                 <constraint firstItem="B5D-hz-O13" firstAttribute="top" secondItem="5Wm-AZ-xjq" secondAttribute="top" id="pJI-Gg-B0h"/>
-                                                <constraint firstItem="LZC-ZO-xY9" firstAttribute="leading" secondItem="4B7-BE-MW0" secondAttribute="leading" constant="20" id="rAd-kz-NAp"/>
                                                 <constraint firstItem="TXD-U9-wwQ" firstAttribute="leading" secondItem="4B7-BE-MW0" secondAttribute="leading" constant="20" id="uib-2K-spk"/>
+                                                <constraint firstItem="ITe-18-E7I" firstAttribute="leading" secondItem="4B7-BE-MW0" secondAttribute="leading" constant="20" id="xRw-BX-5os"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

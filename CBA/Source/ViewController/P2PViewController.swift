@@ -231,12 +231,11 @@ class P2PViewController: UIViewController {
         userView.transform = CGAffineTransform.init(scaleX: 0.0, y: 0.0)
         userView.isAccessibilityElement = true
         userView.accessibilityLabel = user.userDetail?.userName
-        if foundUsers.count == 1 {
-            UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, userView)
-            //UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, userView)
-        }
+        //if foundUsers.count == 1 {
+            //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, userView)
+            UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, userView)
+        //}
         
-
         self.view.addSubview(userView)
         self.view.bringSubview(toFront: userView)
         
