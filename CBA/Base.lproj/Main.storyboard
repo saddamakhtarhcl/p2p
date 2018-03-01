@@ -24,7 +24,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log on with your NetBank details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-ej-KE5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log on with your NetBank details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-ej-KE5">
                                 <rect key="frame" x="62" y="160.5" width="251.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -85,10 +85,12 @@
                         <constraints>
                             <constraint firstItem="aum-Bb-7bI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Xy-1T-OjM"/>
                             <constraint firstItem="DCO-ra-b6i" firstAttribute="leading" secondItem="Rjq-QV-YCG" secondAttribute="trailing" constant="20" id="BI2-K6-ZlS"/>
+                            <constraint firstItem="GG1-ej-KE5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IMc-M5-GUW"/>
                             <constraint firstItem="Qot-xM-ZIy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Jeg-nd-33g"/>
                             <constraint firstItem="pVW-tH-Oza" firstAttribute="top" secondItem="9Nc-7A-OD5" secondAttribute="top" id="MYH-ax-noS"/>
                             <constraint firstItem="pVW-tH-Oza" firstAttribute="leading" secondItem="9Nc-7A-OD5" secondAttribute="trailing" constant="20" id="OY8-JQ-lhj"/>
                             <constraint firstItem="Qot-xM-ZIy" firstAttribute="top" secondItem="DCO-ra-b6i" secondAttribute="bottom" constant="30" id="QoL-qB-ZrP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GG1-ej-KE5" secondAttribute="trailing" id="St8-G9-qeq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qot-xM-ZIy" secondAttribute="trailing" constant="30" id="TVF-Ug-TZo"/>
                             <constraint firstItem="GG1-ej-KE5" firstAttribute="top" secondItem="aum-Bb-7bI" secondAttribute="bottom" constant="50" id="XPl-uB-tkW"/>
                             <constraint firstItem="Rjq-QV-YCG" firstAttribute="top" secondItem="9Nc-7A-OD5" secondAttribute="bottom" constant="30" id="Zeq-qv-kRL"/>
@@ -105,6 +107,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="YIH-UI-vhB"/>
                     <connections>
+                        <outlet property="lblLoginTitle" destination="GG1-ej-KE5" id="UST-4Y-cci"/>
+                        <outlet property="lblNetBank" destination="aum-Bb-7bI" id="Vzh-j3-5eb"/>
                         <outlet property="txtClientNumber" destination="pVW-tH-Oza" id="UjK-Xc-BYZ"/>
                         <outlet property="txtPassword" destination="DCO-ra-b6i" id="VA5-h6-ZCB"/>
                         <segue destination="hQe-n6-Suf" kind="show" identifier="DashBoardSegue" id="DOY-L7-7vs"/>

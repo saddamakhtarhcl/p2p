@@ -12,10 +12,16 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var txtClientNumber: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var lblNetBank: UILabel!
+    
+    @IBOutlet weak var lblLoginTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        lblNetBank.adjustsFontForContentSizeCategory = true
+        lblNetBank.font = UIFont.preferredFont(forTextStyle: .body)
+        lblLoginTitle.adjustsFontForContentSizeCategory = true
+        lblLoginTitle.font = UIFont.preferredFont(forTextStyle: .body)
         navigationController?.navigationBar.barTintColor = UIColor.init(red: 133.0/255.0,
                                                                         green: 163.0/255.0,
                                                                         blue: 165.0/255.0,
